@@ -1,0 +1,48 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="index.css">
+</head>
+
+<body>
+    <div class="container">
+        <div class="card">
+            <div class="front face">
+            </div>
+            <div class="back face">
+                <span id="one"></span>
+
+
+            </div>
+        </div>
+    </div>
+</body>
+<script>
+
+    function abc() {
+        setTimeout(() => {
+            document.getElementById('one').innerHTML = 'This is a Pie';
+            pqr();
+        }, 2500);
+    }
+    function pqr() {
+        setTimeout(() => {
+            document.getElementById('one').innerHTML = 'This is called  Dosa';
+            xyz();
+        }, 9000);
+    }
+    function xyz() {
+        setTimeout(() => {
+            document.getElementById('one').innerHTML = "Burger";
+            abc();
+        }, 5000);
+    }
+    abc();
+
+</script>
+
+</html>

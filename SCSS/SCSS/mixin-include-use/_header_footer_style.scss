@@ -1,0 +1,11 @@
+@use 'variables' as v;
+
+@mixin header_and_footer{
+    background-color: v.$background;
+    color: v.$color;
+    text-align: v.$ta;
+    position: v.$position;
+    height: v.$header_footer_height;
+    width: v.$header_footer_width;
+    // top: v.$ht;
+}

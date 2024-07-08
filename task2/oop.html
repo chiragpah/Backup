@@ -1,0 +1,76 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+
+        // class Person {
+        //     constructor(p) {
+        //         this.pname = p;
+        //     }
+
+        // }
+
+        // class Employee extends Person {
+        //     constructor(p, lname) {
+
+        //         super(p);
+        //         this.lname = lname;
+        //     }
+
+        //     show() {
+        //         console.log(this.pname + " " + this.lname);
+        //     }
+        // }
+
+        // function fun() {
+        //     const obj = new Employee(document.getElementById("txtname").value, document.getElementById("txtname2").value);
+        //     obj.show();
+        // }
+
+
+        class employee {
+            empname;
+            constructor(empname) {
+                this.empname = empname;
+            }
+            showEmployeeDetails() {
+                return this.empname;
+            }
+        }
+        // employee.empDesignation = "Developer";      /// cannot add this in class-shws undefined 
+        employee.prototype.empDesignation = "Developer";
+
+        // class Company {
+        //     companyname;
+        //     empObject;
+        //     constructor(empElement, companyName) {
+        //         this.empObject = empElement;
+        //         this.companyname = companyName;
+        //     }
+
+        //     printCompanyDetails() {
+        //         var msg = this.empObject.showEmployeeDetails() + " works for " + this.companyname;
+        //         return msg;
+        //     }
+        // }
+
+        const fun = function () {
+            let empItem = new employee("Chirag Pahlajani");
+            // let compItem = new Company(empItem, "DemoSolutions");
+            let msg = empItem.empname + " work as " + empItem.empDesignation;
+            console.log(msg);
+            console.log(empItem);
+        }
+
+    </script>
+</head>
+
+<body>
+    <input type="button" value="Display content" onclick="fun();">
+</body>
+
+</html>

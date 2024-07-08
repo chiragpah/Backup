@@ -1,0 +1,35 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<body>
+    <div>
+        <h1>Working with JS</h1>
+        <br><br>
+        <span>Enter Your Name</span>
+        <input type="text" id="first">
+        <br><br>
+        <input type="button" onclick="saveData();" value="save">
+        <input type="button" value="Display" onclick="showData();">
+        <span id="span1"></span>
+    </div>
+</body>
+<script>
+    var ename;
+    function saveData(){
+        ename=document.getElementById('first').value;
+        alert("saved");
+        document.getElementById('first').value="";
+        document.getElementById('first').focus();
+    }
+    function showData(){
+        var obj=document.getElementById('span1');
+        var msg="Name stored is "+ ename;
+        obj.innerText=msg;
+    }
+    
+</script>
+</html>

@@ -1,0 +1,23 @@
+.head,
+.foot {
+  background-color: lightskyblue;
+  color: red;
+  text-align: center;
+  height: 50px;
+}
+
+.sec1 {
+  background-color: grey;
+  height: 80vh;
+}
+
+span {
+  position: relative;
+  top: 10px;
+}
+
+.a1 {
+  position: relative;
+  top: 10px;
+  padding-left: 120px;
+}/*# sourceMappingURL=variables.css.map */

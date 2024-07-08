@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        .box {
+            width: 100px;
+            height: 100px;
+            background-color: white;
+            animation-name: example;
+            animation-duration: 15s;
+            animation-delay: 5s;
+
+        }
+
+        @keyframes example {
+            0% {
+                background-color: white;
+
+            }
+
+            100% {
+                background-color: white;
+            }
+        }
+    </style>
+    <script>
+
+        function changeValue() {
+            var a = document.styleSheets[0];
+            var c1 = document.getElementById('color1').value;
+            var c2 = document.getElementById('color2').value;
+            var c = a.cssRules[1];
+            c.deleteRule(0);
+            c.appendRule('from{background-color:' + c1 + ';}');
+            var d = a.cssRules[1];
+            d.deleteRule(1);
+            d.appendRule('to{background-color:' + c2 + ';}')
+
+        }
+    </script>
+</head>
+
+<body class="root">
+
+
+    <label for="color1">Color1</label>
+    <input type="color" name="color1" id="color1">
+
+    <label for="color2">Color2</label>
+    <input type="color" name="color2" id="color2">
+
+    <input type="submit" onclick="changeValue();">
+    <div class="box" style="width: 100px; height: 100px; border: 2px solid black;">
+
+    </div>
+</body>
+
+</html>

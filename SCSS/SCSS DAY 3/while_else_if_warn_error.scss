@@ -1,0 +1,24 @@
+//  while
+//  while condition{
+//     stat;
+//     increment/decrement;
+//  }
+@use "sass:map";   // use this only for map.get()
+
+$colors:(1:crimson,2:blue,3:green,4:purple,5:gold,6:black);   // map(key:value)
+$val1:1;
+@while $val1<=6{
+    // @warn $val1;
+    // @error $val1;
+    @if $val1==1 or $val1==3{
+        h#{$val1}{color: map.get($colors,$val1);}   
+    }
+    @else if $val1==2 or $val1==4{
+        h#{$val1} {background-color: map-get($colors,$val1);}
+    }
+    @else{
+       h#{$val1}{ text-transform: uppercase;}
+    }
+    $val1:$val1+1;
+  
+    }

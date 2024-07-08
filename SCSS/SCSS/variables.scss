@@ -1,0 +1,44 @@
+// $background : lightskyblue;
+// $text_color: crimson;
+// $secondaryBack: purple;
+// $padding:50px;
+// $headpadding:10px;
+// $textColor: white;
+// $height:60vh;
+// $text_align:center;
+// $lineHeight: 20px;
+
+$headercolor:#163020;
+$textcolor:#EEF0E5;
+$footercolor:#304D30;
+$bgcolor:#B6C4B6;
+$center: center;
+$padding: 50px;
+$section: 60vh;
+$lineheight: normal;
+
+.header 
+{
+    background-color: $headercolor;
+    color:$textcolor;
+    text-align:$center;
+    padding: $padding;
+    line-height: $lineheight;
+}
+.section
+{
+    background-color: $bgcolor;
+    color:$textcolor;
+    text-align:$center;
+    height:$section; 
+   
+}
+
+.footer 
+{
+    background-color: $footercolor;
+    color:$textcolor;
+    text-align:$center;
+    padding: $padding;
+   
+}

@@ -1,0 +1,25 @@
+div {
+    display: flex;
+    margin-top: 300px;
+    justify-content: center;
+}
+
+table {
+    border: 2px solid black;
+    width: 300px;
+}
+
+tr:nth-child(even) {
+    background-color: rgb(180, 242, 104);
+
+}
+
+th,
+td {
+    text-align: center;
+}
+
+th {
+    border: 1px solid transparent;
+    background-color: rgb(184, 181, 181);
+}

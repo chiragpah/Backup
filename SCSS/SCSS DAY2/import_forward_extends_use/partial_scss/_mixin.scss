@@ -1,0 +1,20 @@
+// @import '../partial_scss/variables';
+@use 'variables' as v;
+@mixin style_div1
+{
+    background-image:v.$first_img;
+    margin-top: v.$first_mt;
+    // border: v.$b;
+    // height: v.$h;
+    // width: v.$w;
+}
+
+@mixin style_div2
+{
+    
+    background-image: v.$second_img;
+    margin-top:v.$second_mt;
+    // border: v.$b;
+    // height: v.$h;
+    // width: v.$w;
+}

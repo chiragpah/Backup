@@ -1,0 +1,19 @@
+@for $i from 1 through 4{
+    .p#{$i}{
+        padding-left: 10px*$i;
+    }
+}
+$no:(1,2,3,4,5,6);
+$bgc:(crimson,gold,lightseagreen,blue,orange,pink);
+    @each $n,$bg in zip($no,$bgc){
+    #list_#{$n}{
+        @if $n<=3{
+        background-color: $bg;
+            }
+        @else{
+            color:$bg;
+        }  
+      }
+
+   
+    }

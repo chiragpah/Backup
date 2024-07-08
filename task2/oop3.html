@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun() {
+            let x = 20;
+            let y = 30;
+            try {
+                let z = calculateSum(x, y);
+                console.log(z);
+            }
+            catch (err) {
+                alert("Error raised: " + err);
+            }
+        }
+
+        function validateAge() {
+            let age = 15;
+            if (age < 18) {
+                try {
+                    throw "Invalid age";
+                }
+                catch (err) {
+                    console.log("Error :" + err);
+                }
+            }
+            else {
+                console.log("Age is invalid");
+            }
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" onclick="fun()" value="click me">
+</body>
+
+</html>

@@ -1,0 +1,32 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun() {
+            let promiseObj = new Promise(function (resolve, reject) {
+                let age = 5;
+                if (age >= 20) {
+                    resolve("Valid age");
+                }
+                else {
+                    reject("Not Valid age");
+                }
+            })
+
+            promiseObj.then((msg) => {
+                document.getElementById("span").innerText = msg;
+            })
+        }
+    </script>
+</head>
+
+<body>
+    <span id="span"></span>
+    <input type="button" onclick="fun()" value="Validate age">
+</body>
+
+</html>

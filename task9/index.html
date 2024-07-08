@@ -1,0 +1,42 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <h1> Web Worker Implementation</h1>
+    <div style="border: 2px solid black; background: linear-gradient(90deg,white,red);">
+
+        <p style="text-align: center;">Multiplication:<output id="result"></output></p>
+        <button style="width: 100px; margin: 30px 200px; " onclick="startWorker()">Start</button>
+        <button style="width: 100px;" onclick="stopWorker()">Stop</button>
+    </div>
+
+    <script>
+        var a;
+
+        function startWorker() {
+            if (typeof (Worker) !== "undefined") {
+                if (typeof (a) == "undefined") {
+                    a = new Worker("demo_worker.js");
+                }
+                a.onmessage = function (event) {
+                    document.getElementById("result").innerHTML = event.data;
+                };
+            } else {
+                document.getElementById("result").innerHTML = "Sorry! No Web Worker support.";
+            }
+        }
+
+        function stopWorker() {
+            a.terminate();
+            a = undefined;
+        }
+    </script>
+</body>
+
+</html>

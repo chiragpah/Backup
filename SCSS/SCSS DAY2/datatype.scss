@@ -1,0 +1,32 @@
+$name:"SHREYAS DILIP AMBHAIKAR";
+@debug $name;
+$age:22;
+@debug $age;
+$maritial:true;
+@if $maritial{
+    @debug "Married";
+}
+@else{
+    @debug "UnMarried";
+}
+$arr:"HTML","CSS","JAVASCRIPT","SCSS";
+@debug $arr;
+$arr1:("Emp1":"HTML","Emp2":"CSS","Emp3":"JAVASCRIPT","Emp4":"JAVASCRIPT");
+@debug $arr1;
+
+
+// @for <var_name> from start_value through
+// end_value 
+// {
+//     //logic
+// }
+@for $i from 5 through 1{
+    @debug $i;
+}
+@for $i from 5 through 1{
+    @debug $i;
+}
+
+@each $tech in $arr1{
+    @debug $tech;
+}

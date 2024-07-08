@@ -1,0 +1,31 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun() {
+            var divobj = document.getElementById("div1");
+            var buttonobj = document.createElement("button");
+            buttonobj.setAttribute("id", "btn2");
+            buttonobj.innerText = "Click the Button";
+            buttonobj.addEventListener("click", myfun);
+            divobj.appendChild(buttonobj);
+        }
+
+        function myfun() {
+            console.log("myfun method called");
+        }
+    </script>
+</head>
+
+<body>
+    <input type="button" value="Display content" onclick="fun();">
+    <br><br>
+    <div id="div1"></div>
+
+</body>
+
+</html>

@@ -1,0 +1,69 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        // var empObj = {
+        //     "Name": "Chirag",
+        //     "Age": 29,
+        //     function() {
+        //         console.log("Hello" + this.Name)
+        //     }
+        // }
+        // console.log(empObj);
+
+
+        function uploadData() {
+            var tbody = document.querySelector('#mytable tbody');
+            var allRecords = [];
+
+            allRecords.forEach((item) => {
+                allRecords.
+            }
+
+            )
+
+            // { Name: "Jojo", Age: 23, City: "Delhi" },
+            // { Name: "Chirag", Age: 29, City: "Mumbai" },
+            // { Name: "Shreyas", Age: 22, City: "Bangalore" },
+            // { Name: "Ayush", Age: 25, City: "chimur" },
+            // { Name: "Sad", Age: 21, City: "Nagpur" },
+
+
+            allRecords.forEach((item) => {
+                var row = tbody.insertRow();
+                Object.values(item).forEach((value) => {
+                    var cell = row.insertCell();
+                    cell.textContent = value;
+                })
+            })
+        }
+
+    </script>
+</head>
+
+<body>
+    <table id="mytable" border="1px">
+        <thead>
+            <tr>
+                <th>Name</th>
+                <th>Age</th>
+                <th>City</th>
+            </tr>
+        </thead>
+        <tbody></tbody>
+    </table>
+
+    <input type="text" id="name">
+    <br>
+    <input type="number" id="age">
+    <br>
+    <input type="text" id="city">
+    <br>
+    <input type="button" onclick="uploadData()" value="Click Here">
+</body>
+
+</html>

@@ -1,0 +1,41 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        class Emp {
+            empname;
+            empage;
+            constructor() {
+
+            }
+            set Sname(name) {
+                this.empname = name;
+            }
+            set Sage(age) {
+                this.empage = age;
+            }
+            get Ename() {
+                return this.empname;
+            }
+            get Eage() {
+                return this.empage;
+            }
+
+        }
+
+        const obj = new Emp();
+        obj.Sname = "Chirag Pahlajani";
+        obj.Sage = 22;
+        console.log(obj.Ename + " " + obj.Eage);
+    </script>
+</head>
+
+<body>
+
+</body>
+
+</html>

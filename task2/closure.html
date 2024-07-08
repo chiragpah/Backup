@@ -1,0 +1,64 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+
+</head>
+
+<body>
+    <button onclick="a();">Display</button>
+</body>
+<script>
+    class dummyDocument {
+        pageCount;
+        pageHeader;
+        pageFooter;
+        constructor(pcount, pheader, pfooter) {
+            this.pageCount = pcount;
+            this.pageFooter = pfooter;
+            this.pageHeader = pheader;
+        }
+    }
+
+    class dummyResume extends dummyDocument {
+        constructor(pcount, pheader, pfooter) {
+            super(pcount, pheader, pfooter);
+        }
+    }
+    class dummyReport extends dummyDocument {
+        constructor(pcount, pheader, pfooter) {
+            super(pcount, pheader, pfooter);
+        }
+    }
+    class dummyCreate {
+        ob;
+        an;
+        constructor(obj) {
+            this.ob = obj;
+            if (this.ob == 'Resume') {
+                this.an = new dummyResume(3, 'Resume', 'footer');
+            }
+            else if (this.ob == 'Report') {
+                this.an = new dummyReport(7, 'Report', 'footer');
+            }
+
+        }
+        returnmeth() {
+            return this.an;
+        }
+
+
+    }
+    function a() {
+        let d = new dummyCreate("Report");
+        let aa = d.returnmeth();
+        alert(aa);
+    }
+
+
+</script>
+
+</html>

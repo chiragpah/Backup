@@ -1,0 +1,52 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        var arr = [];
+        function ins(ename) {
+
+            arr.push(ename + "\n");
+            arr.split(",");
+        }
+        function show() {
+            document.getElementById("txt2").innerText = arr;
+        }
+        function serch(ename) {
+            var searchStatus = false;
+            var ind = -1;
+            for (var i = 0; i < arr.length; i++) {
+
+                if (ename == arr[i]) {
+                    searchStatus = true;
+                    ind = i;
+                    break;
+                }
+            }
+            if (searchStatus == true) {
+                document.getElementById('txt2').value = "Record Found";
+                document.getElementById('txt3').value = ind;
+            }
+            else
+                document.getElementById('txt2').value = 'Not Found';
+            document.getElementById('txt3').value = ind;
+
+        }
+
+    </script>
+</head>
+
+<body>
+    <input id="txt1" type="text">
+    <button onclick="ins(document.getElementById('txt1').value);">ADD</button>
+    <button onclick="show();">Show</button>
+    <button onclick="serch(document.getElementById('txt1').value)">Search</button>
+    <span rows="4" id="txt2"></span>
+    <input id="txt3" type="text">
+
+</body>
+
+</html>

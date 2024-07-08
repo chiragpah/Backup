@@ -1,0 +1,34 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <center>
+        <div style="position: absolute; top:40%; left: 40%;">
+            <p id="colors" style="font-size: 30px;"> Hello Welcome to My page<br>
+                Hi my name is Chirag Pahlajani
+            </p>
+            <button onclick="changeColor();">Change</button>
+        </div>
+
+
+    </center>
+</body>
+<script>
+    function changeColor() {
+
+        var a = document.getElementById("colors");
+        var col = '#';
+        var letters = '0123456789ABCDEF';
+        for (var i = 0; i < 6; i++)
+            col += letters[Math.floor(Math.random() * 16)];
+        a.style.backgroundColor = col;
+    }
+</script>
+
+</html>

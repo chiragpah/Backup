@@ -1,0 +1,20 @@
+@use 'variable' as v;
+
+@mixin header_and_footer {
+    background-color: v.$background;
+    color: v.$text_color;
+    text-align: v.$txt;
+
+    height: v.$head_h;
+}
+
+@mixin sec {
+    background-color: v.$background1;
+    height: v.$sec_h;
+}
+
+@mixin atag {
+    position: relative;
+    top: 10px;
+    padding-left: 120px;
+}

@@ -1,0 +1,18 @@
+@use '../partial_scss/main' as m ;
+
+%common_div_style {
+    width:m.$h;
+    height:m.$w;
+    border: 6px solid crimson;
+    background-repeat: no-repeat;
+    background-size: 100% 100%;
+    
+}
+.first_div{
+    @include m.style_div1;
+    @extend %common_div_style;
+}
+.second_div{
+    @include m.style_div2;
+    @extend %common_div_style;
+}

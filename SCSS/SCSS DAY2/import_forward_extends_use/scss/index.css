@@ -1,0 +1,17 @@
+.second_div, .first_div {
+  width: 200px;
+  height: 200px;
+  border: 6px solid crimson;
+  background-repeat: no-repeat;
+  background-size: 100% 100%;
+}
+
+.first_div {
+  background-image: url("../th.jfif");
+  margin-top: 10px;
+}
+
+.second_div {
+  background-image: url("../th (2).jfif");
+  margin-top: 300px;
+}/*# sourceMappingURL=index.css.map */

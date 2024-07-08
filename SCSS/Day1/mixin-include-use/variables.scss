@@ -1,0 +1,21 @@
+@use 'header_and_footer' as s;
+@use 'variable' as v;
+
+.head,
+.foot {
+    @include s.header_and_footer;
+
+}
+
+.sec1 {
+    @include s.sec;
+}
+
+span {
+    position: relative;
+    top: 10px;
+}
+
+.a1 {
+    @include s.atag;
+}

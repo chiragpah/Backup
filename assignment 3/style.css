@@ -1,0 +1,77 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 500px;
+}
+
+.container {
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+
+
+.card {
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: transform 3s;
+    animation-name: change;
+    animation-duration: 5s;
+    border-radius: 20px;
+}
+
+.face {
+    height: 100%;
+    width: 100%;
+    border-radius: 20px;
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+
+}
+
+.back {
+    display: block;
+    transform: rotateY(180deg);
+    background-color: red;
+    box-sizing: border-box;
+}
+
+.card:hover {
+    transform: rotateY(180deg);
+    box-shadow: 0px 10px 10px #aaa;
+}
+
+.front {
+    background-image: url("/food1.jfif");
+    background-size: cover;
+    object-fit: contain;
+
+}
+
+@keyframes change {
+    0% {
+        background-image: url("food1.jfif");
+    }
+
+    50% {
+        background-image: url("food2.jfif");
+    }
+
+    100% {
+        background-image: url("food3.jfif");
+    }
+}

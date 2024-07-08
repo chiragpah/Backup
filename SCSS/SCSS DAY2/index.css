@@ -1,0 +1,39 @@
+.p1 {
+  padding-left: 10px;
+}
+
+.p2 {
+  padding-left: 20px;
+}
+
+.p3 {
+  padding-left: 30px;
+}
+
+.p4 {
+  padding-left: 40px;
+}
+
+#list_1 {
+  background-color: crimson;
+}
+
+#list_2 {
+  background-color: gold;
+}
+
+#list_3 {
+  background-color: lightseagreen;
+}
+
+#list_4 {
+  color: blue;
+}
+
+#list_5 {
+  color: orange;
+}
+
+#list_6 {
+  color: pink;
+}/*# sourceMappingURL=index.css.map */

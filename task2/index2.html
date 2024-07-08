@@ -1,0 +1,66 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body>
+    <div>
+        <span>Enter your name</span>
+        <input type="text" id="one">
+        <input type="button" id="btn1" value="Save data" onclick="saveToArray();">
+        <input type="button" id="btn2" value="Saveto Local Storage" onclick="saveToLocal();">
+        <input type="button" id="btn3" value="Display all elements from Array" onclick="showFromArray();">
+        <input type="button" id="btn4" value="Display all elements from Local" onclick="showFromLocal();">
+    </div>
+    <div id="arrayResultDiv">
+
+    </div>
+    <br>
+    <div id="arrayResultDiv1">
+
+    </div>
+</body>
+<script>
+    var allNames = [];
+    function saveToArray() {
+        allNames.push(document.getElementById('one').value);
+        alert('ADDED');
+        document.getElementById('one').value = "";
+        document.getElementById('one').focus();
+    }
+
+    function saveToLocal() {
+        localStorage.setItem("allNamesList", allNames);
+        alert("data saved in local");
+        document.getElementById('one').value = "";
+        document.getElementById('one').focus();
+    }
+
+    function showFromArray() {
+        var divobj = document.getElementById("arrayResultDiv");
+        var divInfo = "<ul>";
+        allNames.forEach(function (enameValue) {
+            divInfo = divInfo + "<li>" + enameValue + "</li>";
+        });
+        divInfo = divInfo + "</ul>";
+        divobj.innerHTML = divInfo;
+    }
+    function showFromLocal() {
+        var divObj = document.getElementById("localStorageResultDiv1");
+        var allNamesFromStoage = localStorage.getItem("allNamesList").split(",");
+        var divobj = document.getElementById("arrayResultDiv");
+        var divInfo = "<ul>";
+        allNamesFromStoage.forEach(function (enameValue) {
+            divInfo = divInfo + "<li>" + enameValue + "</li>";
+        });
+        divInfo = divInfo + "</ul>";
+        divobj.innerHTML = divInfo;
+    }
+
+</script>
+
+</html>

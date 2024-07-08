@@ -1,0 +1,43 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script>
+        function fun() {
+            var arr = [10, 20, 30];
+            setTimeout(printMessage(arr, arr.length), 3000);
+        }
+        function printMessage(num1, num2) {
+            var a = document.getElementById('div1');
+            a.innerHTML = "Length is " + num2 + "<br>";
+            for (var i = 0; i < num2.length; i++)
+                console.log(num[i]);
+            a.style.backgroundColor = "red";
+            a.style.fontSize = "32px";
+            a.style.textAlign = "center"
+            a.style.color = "white"
+            a.style.padding = "10px"
+            a.style.margin = "20px"
+            a.style.border = "5px solid gold"
+            a.style.boxShadow = "10px 10px 10px grey "
+            a.style.transition = " 1s ease-out "
+            a.style.transform = "scaleY(1.2)"
+            a.style.width = "400px"
+            a.style.height = "440px"
+
+        }
+    </script>
+</head>
+
+<body>
+    <div id="div1">
+        <span id="one"></span>
+        <button onclick="fun();">Display</button>
+
+    </div>
+</body>
+
+</html>

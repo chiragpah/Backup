@@ -1,0 +1,19 @@
+.header,
+.footer {
+  background-color: lightskyblue;
+  color: crimson;
+  text-align: center;
+  position: absolute;
+  height: 40px;
+  width: 100%;
+}
+
+.header {
+  top: 0%;
+}
+
+.footer {
+  bottom: 0%;
+}
+
+/*# sourceMappingURL=index.css.map */

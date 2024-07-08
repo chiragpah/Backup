@@ -1,0 +1,113 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+
+<body onload="dis();">
+    <div>
+        <span>ADD:</span>
+        <select id="three">
+            <option value='h1'>h1</option>
+            <option value="h2">h2</option>
+            <option value="div">div</option>
+        </select>
+        <button onclick="sub();">Create</button><br> <br>
+        <span>Total No:</span>
+        <span id="one"></span>
+    </div>
+    <div style="display: flex;">
+        <canvas id="as" width="800" height="800" style="border: 1px solid ;"></canvas>
+        <div id="id1"></div>
+    </div>
+
+</body>
+<script>
+    var c = document.getElementById('as');
+    var ctx = c.getContext('2d');
+    var clm = 225;
+    var row = 25;
+    var clm1 = 390;
+    var row1 = 20
+    var row2 = 50
+    var clm2 = 420
+    var rw = 50
+    var i = 5;
+    ctx.beginPath();
+    function dis() {
+        var coun = document.body.childElementCount;
+        document.getElementById('one').innerText = coun;
+
+
+
+        ctx.ellipse(140, 50, 50, 40, Math.PI, 0, 2 * Math.PI);
+        ctx.stroke();
+        ctx.fillText("Body", 130, 50);
+        ctx.moveTo(130, 90);
+        ctx.lineTo(50, 150);
+        ctx.stroke();
+        ctx.moveTo(150, 90);
+        ctx.lineTo(210, 150);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.ellipse(200, 190, 50, 40, Math.PI, 0, 2 * Math.PI);
+        ctx.stroke();
+        ctx.fillText("Div", 40, 190);
+        ctx.moveTo(190, 50);
+        ctx.lineTo(300, 170);
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.ellipse(320, 205, 50, 40, Math.PI, 0, 2 * Math.PI);
+        ctx.stroke();
+        ctx.fillText("Div", 310, 200);
+        ctx.beginPath();
+        ctx.ellipse(50, 190, 50, 40, Math.PI, 0, 2 * Math.PI);
+        ctx.stroke();
+        ctx.fillText("Select List", 190, 190);
+
+
+    }
+    function sub() {
+
+        var a = document.getElementById('three').value;
+        var b;
+        if (a == 'h1') {
+            b = document.createElement(a);
+            b.innerHTML = " Hello this is heading1";
+        } if (a == 'h2') {
+            var b = document.createElement(a);
+            b.innerText = "Hello this is heading2";
+        } if (a == 'div') {
+            var b = document.createElement(a);
+            b.innerText = "Hello this is div";
+        } document.getElementById('id1').appendChild(b);
+        document.getElementById('one').innerText = Number(document.getElementById('one').innerText) + 1; var
+            arr = document.getElementById('id1').children;
+
+
+
+
+        ctx.moveTo(row, clm);
+        ctx.lineTo(row1, clm1);
+        row = row + i;
+        clm = clm
+
+        clm1 = clm1
+        i += 1;
+        row1 = row1 + 125;
+        ctx.stroke();
+        ctx.beginPath();
+        ctx.ellipse(row2, clm2, 50, 40, Math.PI, 0, 2 * Math.PI);
+        row2 += 120
+        ctx.stroke();
+        ctx.fillText(document.getElementById('three').value, rw, 420);
+        rw += 120;
+    }
+
+</script>
+
+
+</html>

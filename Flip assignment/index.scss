@@ -1,0 +1,120 @@
+* {
+    padding: 0;
+    margin: 0;
+    box-sizing: border-box;
+}
+
+body {
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    overflow: hidden;
+    height: 500px;
+}
+
+.container {
+    height: 300px;
+    width: 300px;
+    border-radius: 20px;
+}
+
+.card {
+    height: 100%;
+    width: 100%;
+    transform-style: preserve-3d;
+    transition: ease-in-out;
+
+}
+
+.face {
+    height: 100%;
+    width: 100%;
+
+    position: absolute;
+    backface-visibility: hidden;
+    display: flex;
+    justify-content: center;
+    align-items: center;
+    font-size: 30px;
+
+}
+
+.card:hover {
+
+    box-shadow: 0px 10px 10px #aaa;
+    transition-duration: infinite;
+    background-image: url("food1.jfif");
+    background-size: cover;
+    object-fit: contain;
+    animation: rotat 2s forwards;
+
+}
+
+.front {
+    background-image: url("");
+    animation: change 20s infinite alternate;
+}
+
+.back {
+
+    transform: rotateY(180deg);
+    background-color: red;
+    box-sizing: border-box;
+}
+
+@keyframes rotat {
+    0% {
+        transform: rotateY(0deg);
+    }
+
+    100% {
+        transform: rotateY(180deg);
+    }
+
+}
+
+// @keyframes imgchange {
+//     0% {
+//         background-image: url();
+//     }
+
+//     50%{
+//         background-image: url();
+//     }
+//     90%{
+//         background-image: url();
+//     }
+// }
+
+@keyframes change {
+    0% {
+        background-image: url("food1.jfif");
+
+    }
+
+    50% {
+        transform: rotateY(360deg);
+        background-image: url('food3.jfif');
+
+        /* #one p::after {
+        display: block;
+        content: "wsfsedfdd";
+      } */
+
+
+    }
+
+    100% {
+        transform: rotateY(900deg);
+        background-image: url('food2.jfif');
+
+    }
+
+}
+
+
+
+
+
+
+/*# sourceMappingURL=index.css.map */

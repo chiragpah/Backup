@@ -1,0 +1,43 @@
+*{
+    padding: 0;
+    margin: 0;
+}
+body{
+    margin-top: 110px;
+    height: 100vh;
+    align-items: center;
+    background:#e0e3eb;
+}
+.no{
+    border:2px solid black;
+    height: 70px;
+    width: 70px;
+    padding: 20px;
+    margin: 1px 3px;
+    border-radius: 9px;
+    background-color: #e6e8ea;
+   }
+#abc{
+    text-align: center;
+    margin-left: 70px;
+    width:350px;
+    border: 5px solid white;
+    background-color: black;
+    border-radius: 30px;
+
+}
+.def{
+    background-color: orange;
+}
+#one{
+    margin-top: 30px;
+    width:225px;
+    height: 50px;
+}
+input{
+    border:1px solid black;
+    height: 70px;
+    width: 70px;
+    
+
+}
