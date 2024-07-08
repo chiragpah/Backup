@@ -1,0 +1,19 @@
+mat-form-field {
+    width: 100%;
+
+}
+
+.row {
+    display: flex;
+    gap: 10px;
+    padding-top: 1rem;
+}
+
+.content {
+    padding-top: 10px;
+}
+
+.validate_msg {
+    color: red;
+    font-size: 10px;
+}

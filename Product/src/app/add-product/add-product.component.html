@@ -1,0 +1,85 @@
+<div mat-dialog-title>
+    <h1>Product Form</h1>
+</div>
+<form [formGroup]="bookForm" (ngSubmit)="formSubmit()">
+    <div mat-dialog-content class="content">
+        <div class="row">
+            <div style="display: flex; flex-direction: column;">
+                <mat-form-field appearance="outline">
+
+                    <mat-label>Book Title</mat-label>
+                    <input matInput placeholder="Input" formControlName="title">
+
+
+                </mat-form-field>
+                <span class="validate_msg"
+                    *ngIf="bookForm.get('title')?.errors?.['required'] && (bookForm.get('title')?.dirty || bookForm.get('title')?.touched)">Title
+                    is required</span>
+                <span class="validate_msg"
+                    *ngIf="bookForm.get('title')?.errors?.['minlength'] && (bookForm.get('title')?.dirty || bookForm.get('title')?.touched)">
+                    Title minlength should be 5
+                </span>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <mat-form-field appearance="outline">
+                    <mat-label>author</mat-label>
+                    <input matInput placeholder="Input" formControlName="author">
+                </mat-form-field>
+                <span class="validate_msg"
+                    *ngIf="bookForm.get('author')?.errors?.['required'] && (bookForm.get('author')?.dirty || bookForm.get('author')?.touched)">Author
+                    Name is required</span>
+            </div>
+
+        </div>
+        <div class="row">
+            <div style="display: flex; flex-direction: column;">
+                <mat-form-field appearance="outline">
+                    <mat-label>ISBN</mat-label>
+                    <input matInput placeholder="Input" formControlName="isbn">
+                </mat-form-field>
+                <span class="validate_msg"
+                    *ngIf="bookForm.get('isbn')?.errors?.['required'] && (bookForm.get('isbn')?.dirty || bookForm.get('isbn')?.touched)">ISBN
+                    is required</span>
+            </div>
+            <div style="display: flex; flex-direction: column;">
+                <mat-form-field appearance="outline">
+                    <mat-label>Book Price</mat-label>
+                    <input matInput type="number" placeholder="Input" formControlName="bookPrice">
+                </mat-form-field>
+                <span class="validate_msg"
+                    *ngIf="bookForm.get('bookPrice')?.errors?.['required'] && (bookForm.get('bookPrice')?.dirty || bookForm.get('bookPrice')?.touched)">Price
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <mat-label>Book Publication</mat-label>
+            <input type="date" formControlName="publicationDate">
+
+
+        </div>
+        <div class="row">
+            <div style="display: flex; flex-direction: column;">
+                <mat-form-field appearance="outline">
+
+                    <mat-label>Book Publisher</mat-label>
+                    <input matInput placeholder="Input" formControlName="publisher">
+                </mat-form-field>
+                <span class="validate_msg"
+                    *ngIf="bookForm.get('publisher')?.errors?.['required'] && (bookForm.get('publisher')?.dirty || bookForm.get('publisher')?.touched)">Publisher
+                    is required
+                </span>
+            </div>
+        </div>
+        <div class="row">
+            <mat-label>Book Image</mat-label>
+            <input type="file" (change)="onFileSelected($event)" formControlName="bookimageUrl">
+        </div>
+
+
+    </div>
+    <div mat-dialog-actions>
+        <button mat-raised-button type="button" (click)="closeDialog()">Cancel</button>
+
+        <button mat-raised-button color="primary">Save</button>
+    </div>
+</form>

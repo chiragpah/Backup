@@ -1,0 +1,106 @@
+.productTableContainer {
+    min-width: 100%;
+    border-collapse: separate;
+    border-spacing: 0;
+    border-bottom-width: 1px;
+
+    border-bottom-color: #e2e8f0;
+
+    border-bottom-style: solid;
+    overflow: auto;
+}
+
+.productTableLabel {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    text-align: left;
+    font-size: 0.75rem;
+    font-weight: 500;
+    color: #718096;
+    text-transform: uppercase;
+    letter-spacing: 0.05em;
+}
+
+.productBodyContainer {
+    background-color: #ffffff;
+    border-left-width: 1px;
+    border-left-color: #e2e8f0;
+    border-top-width: 1px;
+    border-top-color: #e2e8f0;
+
+}
+
+.productImageContainer {
+    display: flex;
+    align-items: center;
+}
+
+.productBodySubContainer {
+    padding: 1rem 1.75rem;
+    white-space: nowrap;
+}
+
+.productImage {
+    flex-shrink: 0;
+    height: 2.5rem;
+    width: 2.5rem;
+}
+
+.image {
+    height: 2.5rem;
+    width: 2.5rem;
+    border-radius: 50%;
+}
+
+.productNameContainer {
+    margin-left: 1rem;
+}
+
+.productName {
+    font-size: 0.875rem;
+    font-weight: 500;
+    color: #1a202c;
+}
+
+.productDescriptionContainer {
+    padding: 1rem 1.5rem;
+}
+
+.productDescription {
+    font-size: 0.875rem;
+    color: #1a202c;
+}
+
+.productPrice {
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+    display: inline-flex;
+    font-size: 0.75rem;
+    line-height: 1.25rem;
+    font-weight: 600;
+    /* border-radius: 9999px; */
+    /* background-color: #d1fae5;
+    color: #047857; */
+}
+
+.productOperation {
+    color: black;
+}
+
+.productDeleteOperation {
+    color: black;
+    margin-left: 0.5rem;
+}
+
+.commonCss {
+    font-size: 0.875rem;
+    color: #718096;
+}
+
+.icon_size {
+    width: 1.75rem;
+    height: 1.25rem;
+
+}

@@ -1,0 +1,30 @@
+<div class="Productcontainer">
+    <div class="Productcard">
+        <img [src]="baseUrl + Book.bookimageUrl" alt="" />
+        <div class="card-body">
+            <div class="Card_subContainer">
+                <div class="card-title">
+                    <h1>{{Book.title}}</h1>
+                    <h3>{{Book.author}}</h3>
+                    <p>
+                        {{Book.isbn}}
+                    </p>
+                    <p>
+                        {{Book.publisher}}
+                    </p>
+                </div>
+                <div class="view-btn">
+                    <a href="">{{Book.bookPrice}} Rs</a>
+                </div>
+            </div>
+            <hr />
+
+            <div class="button_container">
+                <div class="btn">
+                    <a>Add to Cart</a>
+                </div>
+                <a href=""> Cancel</a>
+            </div>
+        </div>
+    </div>
+</div>
