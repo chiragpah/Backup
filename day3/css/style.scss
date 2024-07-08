@@ -1,0 +1,31 @@
+@use 'variables' as v;
+.main{
+       border:v.$border;
+       border-radius: v.$border_radius;
+       background-color: v.$background;
+       color:v.$color;
+       height:70%;
+       width:70%;
+       display:flex ;
+       align-items: center;
+       justify-content: center;
+       flex-direction: column;
+
+}
+.table{
+      
+              margin-left: auto;
+              margin-right: auto;
+              
+              color:v.$color ;
+              border: 2px solid white;
+             
+            
+}
+
+body{
+       display:flex ;
+       align-items: center;
+       justify-content: center;
+}
+

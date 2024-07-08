@@ -1,0 +1,68 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Customer Form</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="main">
+       
+        <table class="table" id="table">
+            <h1>Customer Details</h1>
+            <tr>
+                <th>Name:</th>
+                <td><input type="text" id="name" class="name" ></td>
+               
+            </tr>
+            <tr>
+                <th>Age:</th>
+                <td><input type="text" id="age" class="age"></td>
+               
+            </tr>
+            <tr>
+                <th>Contact:</th>
+                <td><input type="text" id="Contact" class="Contact"></td>
+               
+            </tr>
+            <tr>
+                <th>Email:</th>
+                <td><input type="email" id="email" class="email"></td>
+               
+            </tr>
+            <tr>
+                <th>Password:</th>
+                <td><input type="password" id="password" class="password"></td>
+               
+            </tr>
+            <tr>
+                <th>DOB:</th>
+                <td><input type="date" id="dob" class="dob"></td>
+               
+            </tr>
+            <tr>
+                <th>Address</th>
+                <td><input type="text" id="Address" class="Address"></td>
+            </tr>
+            <tr>
+                <th>Gender:</th>
+                <td><input type="radio" id="male" class="male" name="gender" value="Male"> Male</td>
+                <td><input type="radio" id="female" class="female" name="gender" value="Female">Female </td>
+               
+            </tr>
+            
+            
+            <tr>
+                
+                <td><button id="submit" class="submit"> Submit</button></td>
+               
+            </tr>
+           
+        </table>
+
+    </div>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/controller/add_customer_controller.js" type="module"></script>
+
+</body>
+</html>

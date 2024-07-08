@@ -1,0 +1,20 @@
+.container {
+  height: 300px;
+  width: 300px;
+  background-color: crimson;
+}
+
+#artist_head,
+#artist_body {
+  background-color: #000000;
+  color: gold;
+  height: 30px;
+  width: 600px;
+  margin-top: 4px;
+  text-align: center;
+}
+
+#artist_body {
+  padding-top: 4px;
+  height: 300px;
+}/*# sourceMappingURL=index.css.map */

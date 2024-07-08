@@ -1,0 +1,55 @@
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Product Form</title>
+    <link rel="stylesheet" href="../css/style.css">
+</head>
+<body>
+    <div class="main">
+        <h1>Product Details</h1>
+        <table class="table">
+            <tr>
+                <th>Product Image:</th>
+                <td><input type="file" id="img" class="img"></td>
+               
+            </tr>
+            <tr>
+                <th>Product Name:</th>
+                <td><input type="text" id="product_name" class="product_name"></td>
+               
+            </tr>
+            <tr>
+                <th>Brand:</th>
+                <td><input type="text" id="brand" class="brand"></td>
+               
+            </tr>
+            <tr>
+                <th>Price:</th>
+                <td><input type="number" id="price" class="price"></td>
+               
+            </tr>
+            <tr>
+                <th>In Stock:</th>
+                <td><input type="number" id="stock" class="stock"></td>
+               
+            </tr>
+            <tr>
+                <th>Description:</th>
+                <td><input type="text" id="desc" class="desc" > </td>
+               
+               
+            </tr>
+            <tr>
+               
+                <td><button id="save" class="save"> Submit</button></td>
+            </tr>
+           
+        </table>
+
+    </div>
+    <script src="../js/plugins.js"></script>
+    <script src="../js/controller/add_product_controller.js" type="module"></script>
+    
+</body>
+</html>

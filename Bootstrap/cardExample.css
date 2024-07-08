@@ -1,0 +1,54 @@
+.card_1{
+    margin-top: 3% ;
+    width: 30%;
+    height: 10%;
+  
+}
+.card_1 img{
+    height:50%;
+    width:100%;
+}
+.card_2{
+    margin-top: 3%;
+}
+.card_2 img{
+    height:48%;
+    width:100%;
+}
+
+.card-header{
+    text-align: center;
+    font-size: medium;
+    font-weight: bold;
+}
+.card_info{
+    text-align: center;
+    margin-top: 2%;
+    font-size: medium;
+
+}
+.card_hold{
+    border: 2px solid black;
+    margin-top: 3%;
+    display:flex
+}
+.btn_css{
+    margin: 3% 0%;
+    width: 120px;
+    
+}
+.card-operations{
+   text-align: center;
+}
+card_foot{
+
+}
+.card-header,.card_footer{
+    text-align: center;
+    background-color: gold;
+    width: 100%;
+
+}
+.pos{
+    
+}

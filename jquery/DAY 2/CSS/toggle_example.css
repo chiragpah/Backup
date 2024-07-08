@@ -1,0 +1,13 @@
+.comp_header, .emp_info {
+  background-color: gold;
+  height: 40px;
+  text-align: center;
+  width: 100%;
+  margin-top: 4px;
+}
+
+.emp_info {
+  background-color: lightskyblue;
+  color: crimson;
+  height: 150px;
+}/*# sourceMappingURL=toggle_example.css.map */

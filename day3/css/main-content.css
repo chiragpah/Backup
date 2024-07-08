@@ -1,0 +1,36 @@
+.content {
+  margin: auto auto;
+  height: 350px;
+  width: 300px;
+  background-color: beige;
+  border: 2px solid crimson;
+  margin-top: 100px;
+  border-radius: 8px;
+}
+
+.img {
+  -o-object-fit: cover;
+     object-fit: cover;
+  height: 200px;
+  width: 300px;
+}
+
+.main-content {
+  display: flex;
+  margin: auto auto;
+  border-radius: 8px;
+  height: auto;
+  width: 1200px;
+  flex-wrap: wrap;
+  padding: 10px;
+  align-items: center;
+}
+
+body {
+  background-color: black;
+}
+
+h1 {
+  color: white;
+  margin-top: 50px;
+}/*# sourceMappingURL=main-content.css.map */

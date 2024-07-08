@@ -1,0 +1,70 @@
+{
+  "customer": [
+    {
+      "_customerName": "",
+      "_date_of_birth": "",
+      "_cont": "",
+      "_gender": "",
+      "_email": "",
+      "_password": "",
+      "id": 1
+    },
+    {
+      "_customerName": "",
+      "_date_of_birth": "",
+      "_cont": "",
+      "_gender": "",
+      "_email": "",
+      "_password": "",
+      "id": 2
+    },
+    {
+      "_customerName": "",
+      "_date_of_birth": "",
+      "_cont": "",
+      "_gender": "",
+      "_email": "",
+      "_password": "",
+      "id": 3
+    },
+    {
+      "_customerName": "chirag",
+      "_date_of_birth": "",
+      "_cont": "",
+      "_gender": "",
+      "_email": "chiragpah@cybage.com",
+      "_password": "",
+      "id": 4
+    },
+    {
+      "_customerName": "sdd dsdd",
+      "_date_of_birth": "2023-12-02",
+      "_cont": "24334",
+      "_gender": "male",
+      "_email": "sds@gmail.com",
+      "_password": "324325425",
+      "id": 5
+    }
+  ],
+  "products": [
+    {
+      "_productName": "butterfly",
+      "_brandName": "Fauna",
+      "_productPrice": "500",
+      "_productAvailablity": "male",
+      "_productDescription": "",
+      "_productType": "C:\\fakepath\\butterfly.jfif",
+      "id": 2
+    },
+    {
+      "_productName": "Laptop",
+      "_brandName": "HP",
+      "_productPrice": "200000",
+      "_productAvailablity": "male",
+      "_productDescription": "LAptop",
+      "_productType": "C:\\fakepath\\HP-Laptop.jfif",
+      "id": 4
+    }
+  ],
+  "order": []
+}

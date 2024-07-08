@@ -1,0 +1,25 @@
+.main {
+  border: 2px solid black;
+  border-radius: 50px;
+  background-color: black;
+  color: white;
+  height: 70%;
+  width: 70%;
+  display: flex;
+  align-items: center;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.table {
+  margin-left: auto;
+  margin-right: auto;
+  color: white;
+  border: 2px solid white;
+}
+
+body {
+  display: flex;
+  align-items: center;
+  justify-content: center;
+}/*# sourceMappingURL=style.css.map */

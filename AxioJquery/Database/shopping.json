@@ -1,0 +1,34 @@
+{
+  "customer": [
+    {
+      "name": "",
+      "password": "",
+      "address": "",
+      "gender": "",
+      "dob": "",
+      "email": "",
+      "contact": "",
+      "id": 1
+    },
+    {
+      "name": "",
+      "password": "",
+      "address": "",
+      "gender": "",
+      "dob": "",
+      "email": "",
+      "contact": "",
+      "id": 2
+    },
+    {
+      "name": "chirag",
+      "password": "",
+      "address": "safsf",
+      "gender": "",
+      "dob": "",
+      "email": "chiragpah@cybage.com",
+      "contact": "",
+      "id": 3
+    }
+  ]
+}

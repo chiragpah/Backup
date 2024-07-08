@@ -1,0 +1,15 @@
+{
+  "customers": [
+    {
+      "_cust_name": "kalyani",
+      "_dob": "",
+      "_email": "kalyanidu@cybage.com",
+      "_password": {},
+      "_contact": "121222",
+      "_address": "dhjfyh",
+      "id": 1
+    }
+  ],
+  "products": [],
+  "orders": []
+}
