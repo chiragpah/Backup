@@ -1,0 +1,31 @@
+h1 {
+
+    display: flex;
+    justify-content: center;
+}
+
+input {
+    padding: 5px;
+    margin: 0px 10px;
+    color: black;
+    background-color: #FAEF5D;
+
+}
+
+hr {
+    height: 2px;
+    width: 100%;
+    background-color: black;
+}
+
+
+
+app-user-profile,
+app-text-input,
+app-hello-world,
+app-employee-list,
+app-task3 {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+}
