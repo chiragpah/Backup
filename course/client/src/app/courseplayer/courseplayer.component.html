@@ -1,0 +1,105 @@
+<div>
+  <div>
+    <div>
+      <div>
+        <div class="container">
+          <div class="sub_container">
+            <div class="video_page1">
+              <div style="height: 100%;">
+                <div class="iframe-container iframe" style="height: 100%;">
+                  <div frameborder="0"
+                    allow="accelerometer; autoplay; clipboard-write; encrypted-media; gyroscope; picture-in-picture;"
+                    style="width: 100%; height: 60vh">
+
+                    <div style="height: 100%; width: 100%;">
+                      <video id="myPlayerID" class="video-js vjs-default-skin" controls preload="auto" width="640"
+                        height="264" style="height: 100%; width: 100%;" (ended)="onVideoEnded()">
+                        <source [src]="selectedVideo" type="video/mp4" id="sourceId">
+                      </video>
+                      <!-- You can add more <source> elements for different video formats -->
+
+
+                      <!-- </video> -->
+                    </div>
+                  </div>
+                </div>
+              </div>
+            </div>
+            <div class="video_page2">
+              <div class="custom-button" (click)="playPreviousVideo()">
+                Prev Lesson
+              </div>
+              <div class="custom-button" (click)="playNextVideo()">
+                Next Lesson
+              </div>
+            </div>
+            <h1 class="custom-text">
+              {{selectedTitle}}
+            </h1>
+
+            <br />
+            <div class="custom-container">
+              <h5 class="txt_tag" (click)="showComponent(1)">Overview</h5>
+              <h5 class="txt_tag_unselect" (click)="showComponent(2)" (click)="navigateToTest()">Resources</h5>
+              <h5 class="txt_tag_unselect" (click)="showComponent(3)">Q&amp;A</h5>
+              <h5 class="txt_tag_unselect" (click)="showComponent(4)">Reviews</h5>
+            </div>
+
+            <div class="bottom-navbar">
+              <div *ngIf="currentComponent === 1">
+                <app-overview [description]="selectedDescription"></app-overview>
+              </div>
+              <div *ngIf="currentComponent === 2">
+
+              </div>
+              <div *ngIf="currentComponent === 3">
+                <app-comments [contentId]="contentId"></app-comments>
+              </div>
+              <div *ngIf="currentComponent === 4" class="feedback_container">
+                <app-feedback></app-feedback>
+              </div>
+            </div>
+
+          </div>
+
+
+
+
+
+
+
+
+
+
+
+
+
+
+          <div class="custom-element">
+            <div class="custom-element2">
+              <div class="custom-element3">
+                <div class="custom-element4">
+                  <div class="custom-element5">
+                    <div class="custom-element6">
+                      <h2 class="custom-element7">Full Course Content</h2>
+
+                    </div>
+                  </div>
+                  <h5 style="color: white">{{course?.length}} Lesson {{totaltime}} Minutes </h5>
+                </div>
+                <br />
+
+                <app-coursesidebar [courseList]="course" (videoSelected)="playVideo($event)" [videoEnded]="videoEnded"
+                  [currentVideoIndex]="currentVideoIndex"></app-coursesidebar>
+
+
+
+
+              </div>
+            </div>
+          </div>
+        </div>
+      </div>
+    </div>
+  </div>
+</div>

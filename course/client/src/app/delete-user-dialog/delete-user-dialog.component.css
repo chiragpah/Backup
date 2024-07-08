@@ -1,0 +1,161 @@
+.deleteDialogbox {
+    position: fixed;
+    top: 50%;
+    transform: translate(-50%, -50%);
+    left: 50%;
+    z-index: 40;
+    min-height: 350px;
+    /* overflow-y: auto; */
+    /* overflow-x: hidden; */
+    width: 400px;
+    transition: all 0.3s ease;
+    /* display: flex; */
+    align-items: center;
+}
+
+.Dialog_subcontainer {
+    /* position: fixed;
+    top: 0;
+    right: 0;
+    bottom: 0;
+    left: 0; */
+    width: 100%;
+    height: 100%;
+    /* background-color: rgba(0, 0, 0, 0.5); */
+    cursor: pointer;
+}
+
+.DialogModal {
+    position: relative;
+
+    width: 100%;
+
+    cursor: pointer;
+
+    pointer-events: none;
+
+    transition: all 0.3s ease;
+    /* Equivalent to transition */
+    margin-top: auto;
+
+    margin-bottom: auto;
+
+    padding: 1rem;
+}
+
+.DialogModalBox {
+    width: 100%;
+    padding-top: 0.5rem;
+    padding-bottom: 0.5rem;
+    background-color: #ffffff;
+    cursor: default;
+    pointer-events: auto;
+    /* background-color: #1f2937; */
+    position: relative;
+    border-radius: 1rem;
+    margin-left: auto;
+    margin-right: auto;
+    /* max-width: 20rem; */
+}
+
+.DialogsubModal {
+    position: absolute;
+    top: 0.5rem;
+    right: 0.5rem;
+    left: auto;
+    right: 0.5rem;
+}
+
+.DialogClosebtn {
+    height: 1rem;
+    width: 1rem;
+    cursor: pointer;
+    color: #cbd5e0;
+}
+
+.username_box {
+    padding: 0.5rem;
+    margin-top: 0.5rem;
+}
+
+.username_sub {
+    padding: 1rem;
+    margin-top: 0.5rem;
+    text-align: center;
+    color: #000;
+}
+
+.username_span {
+    font-size: 1.25rem;
+    font-weight: 700;
+    letter-spacing: -0.025em;
+
+}
+
+.box1 {
+    border-top: 1px solid #e2e8f0;
+    border-top-color: #4a5568;
+    padding-left: 0.5rem;
+    padding-right: 0.5rem;
+}
+
+.submit_box {
+    padding: 0;
+    display: grid;
+    gap: 0.5rem;
+    grid-template-columns: repeat(auto-fit, minmax(0, 1fr));
+}
+
+.custom-button {
+    display: inline-flex;
+    align-items: center;
+    justify-content: center;
+    padding-top: 0.25rem;
+
+    padding-bottom: 0.25rem;
+
+    padding-left: 0.5rem;
+
+    padding-right: 0.5rem;
+
+    font-weight: 500;
+
+    border-radius: 0.375rem;
+
+    border-width: 1px;
+    /* Equivalent to border */
+    border-style: solid;
+    /* Equivalent to border */
+    transition-property: background-color, border-color, color;
+    transition-duration: 0.2s;
+    transition-timing-function: ease;
+    outline: none;
+
+    border-color: transparent;
+
+    min-height: 2.25rem;
+
+    padding-left: 1rem;
+
+    padding-right: 1rem;
+
+    font-size: 0.875rem;
+
+    color: #ffffff;
+
+    box-shadow: 0 1px 2px 0 rgba(0, 0, 0, 0.05);
+
+    background-color: #dc2626;
+}
+
+
+
+.custom-button:focus {
+    background-color: #ef4444;
+
+}
+
+.custom-button:active {
+    background-color: #dc2626;
+    /* Equivalent to focus:ring-offset-red-700 */
+}

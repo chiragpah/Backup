@@ -1,0 +1,6 @@
+<div class="container" style="width: 1150px;">
+  <ng-container *ngFor="let course of coursesres">
+    <app-course-display-template [course]="course"
+      (deleteCourseClicked)="deleteCourse(course)"></app-course-display-template>
+  </ng-container>
+</div>

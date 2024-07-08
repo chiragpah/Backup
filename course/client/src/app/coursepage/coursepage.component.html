@@ -1,0 +1,17 @@
+<div class="overall_container">
+
+  <span class="heading_text_bro" style="font-size: 1.5rem; color: white; margin-top: 2rem;">Unleash Your Potential
+    with</span><span class="heading_text_bro" style="margin-bottom: 3rem;"> Cutting-Edge Project Courses</span>
+  <div class="filter-container">
+    <div class="filter-tags">
+      <span class="filter-tag" (click)="displayAll()" [ngClass]="{'active':currentTag==='static'}">All</span>
+      <span class="filter-tag" *ngFor="let tag of tags; let i=index;" (click)="applyTopicFilter(tag,i)"
+        [ngClass]="{'active':currentTag===tag }">
+        {{ tag }}
+      </span>
+    </div>
+  </div>
+  <div class="grid_box">
+    <app-cards [items]="item" *ngFor="let item of filterCourse"></app-cards>
+  </div>
+</div>

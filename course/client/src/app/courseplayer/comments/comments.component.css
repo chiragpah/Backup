@@ -1,0 +1,230 @@
+.comment_container {
+    width: 100%;
+    background: transparent;
+    border-radius: 0.5rem;
+    border-width: 1px;
+    border-style: solid;
+    padding: 1.5rem;
+    margin-top: 1rem;
+    margin-bottom: 1rem;
+    /* margin-left: 1.5rem; */
+    margin-right: 1.5rem;
+}
+
+.user_comment {
+    font-size: 18px;
+    color: white;
+    padding-top: 0.75rem;
+}
+
+.comment_inner_container {
+    display: flex;
+    flex-direction: column;
+}
+
+.comment_image_container {
+    /* border-width: 1px;
+    border-style: solid;
+    padding: 0.75rem;
+    border-radius: .375rem;
+    margin: 0.75rem 0.75rem 0.75rem 0; */
+    display: flex;
+    width: 100%;
+    margin-bottom: 1.5rem;
+
+}
+
+.comment_image {
+    /* display: flex;
+    gap: 0.75rem;
+    align-items: center; */
+    width: 50px;
+    height: 50px;
+    border-radius: 9999px;
+
+    object-fit: cover;
+
+}
+
+.profile_img {
+    object-fit: cover;
+    width: 2rem;
+    height: 2rem;
+    border-radius: 100%;
+    border-width: 2px;
+    border-style: solid;
+    border-color: blue;
+    box-shadow: 0 0 0 2px blue;
+}
+
+.textsection {
+    width: 100%;
+
+    margin-top: 1.5rem;
+    margin-bottom: 0.5rem;
+
+    /* padding-right: 0.75rem; */
+}
+
+.comment_username {
+    /* font-weight: bold; */
+    padding-top: 0.5rem;
+    color: #fff;
+    padding-left: 0.75rem;
+    width: 95%;
+}
+
+.username {
+    font-size: 20px;
+}
+
+.comment_text {
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border-radius: 0.25rem;
+    margin: 0;
+    resize: none;
+    line-height: 1.5;
+    font-weight: 500;
+    outline: none;
+    height: 2.5rem;
+    padding: 0.5rem 0.75rem;
+    /* overflow: auto; */
+}
+
+.comment_textsection {
+    width: 100%;
+    background-color: transparent;
+    color: white;
+    border-radius: 0.25rem;
+
+    resize: none;
+    line-height: 1.5;
+    font-weight: 500;
+    outline: none;
+    height: 5rem;
+    padding: 0.5rem 0.75rem;
+    /* overflow: auto; */
+}
+
+.comment_text_container {
+    width: 100%;
+    border-width: 1px;
+    border-style: solid;
+    border-color: #ffffff57;
+}
+
+.button_container {
+    /* w-full flex justify-end px-3 */
+    width: 100%;
+    display: flex;
+    justify-content: end;
+    padding: 0 0.75rem;
+}
+
+.comment_button {
+    padding-left: 1.5rem;
+    padding-right: 1.5rem;
+    padding-top: 0.75rem;
+    padding-bottom: 0.75rem;
+    border-radius: 9999px;
+
+    color: #fff;
+    font-size: 0.875rem;
+    background-color: rgb(33 144 255);
+    border: none;
+
+
+
+}
+
+.comment_reply_section {
+    display: flex;
+    width: 100%;
+    padding-bottom: 0.75rem;
+}
+
+@media (min-width: 800px) {
+    .comment_reply_innercontainer {
+        padding-left: .75rem;
+
+    }
+}
+
+.comment_reply_innercontainer {
+    color: rgba(255, 255, 255, 0.51);
+    /* Equivalent to text-[#ffffff83] in Tailwind */
+    cursor: pointer;
+    /* Equivalent to cursor-pointer in Tailwind */
+    margin-right: 0.5rem;
+    /* Equivalent to mr-2 in Tailwind */
+}
+
+.comment_reply1 {
+    width: 100%;
+    display: flex;
+    margin-top: 1.25rem;
+    /* margin-bottom: 1.25rem; */
+    color: white;
+
+}
+
+.comment_reply2 {
+    display: flex;
+    align-items: center;
+}
+
+.comment_reply_input1 {
+    width: 100%;
+    display: flex;
+    position: relative;
+    color: white;
+
+}
+
+.comment_reply_input2 {
+    display: block;
+
+    margin-top: 0.5rem;
+    margin-bottom: 1.25rem;
+    outline: none;
+    background-color: transparent;
+    border: none;
+    border-bottom: 1px solid white;
+    color: white;
+    padding: 5px;
+    width: 95%;
+    /* pointer-events: none; */
+
+}
+
+.comment_reply_btn {
+    position: absolute;
+    bottom: 1.35rem;
+    padding-right: 0.25rem;
+    right: 0;
+    border: none;
+    color: #fff;
+    background: transparent;
+
+}
+
+@media (min-width: 800px) {
+    .comment_reply1 {
+        margin-left: 4rem;
+        width: 95%;
+    }
+
+    .comment_reply_input2 {
+        margin-left: 4rem;
+    }
+}
+
+.reply_icon {
+    padding-left: 0.30rem;
+    margin-top: -2px;
+    cursor: pointer;
+    color: rgba(255, 255, 255, 0.51);
+
+}

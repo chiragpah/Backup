@@ -1,0 +1,54 @@
+<main>
+  <div class="container">
+    <h1 class="quiz-title">Quiz Title</h1>
+    <section class="question-section">
+      <div class="question">
+        <h2 class="question-num">Question {{i+1}}</h2>
+        <p class="question-text">{{question}}</p>
+      </div>
+      <div class="answer">
+        <label class="answer-item" [class.selected]="selectedOption[i] === 'A' && answer[i] === 'A'">
+          <input type="radio" name="option1" (click)="toggleParentClass('A')" id="">
+          <span>{{optionA}}</span>
+        </label>
+        <label class="answer-item" [class.selected]="selectedOption[i] === 'B' && answer[i] === 'B'">
+          <input type="radio" name="option2" (click)="toggleParentClass('B')" id="">
+          <span>{{optionB}}</span>
+        </label>
+        <label class="answer-item" [class.selected]="selectedOption[i] === 'C' && answer[i] === 'C'">
+          <input type="radio" name="option3" (click)="toggleParentClass('C')" id="">
+          <span>{{optionC}}</span>
+        </label>
+        <label class="answer-item" [class.selected]="selectedOption[i] === 'D' && answer[i] === 'D'">
+          <input type="radio" name="option4" (click)="toggleParentClass('D')" id="">
+          <span>{{optionD}}</span>
+        </label>
+      </div>
+      <div class="action">
+        <button class="btn" (click)="prevQuestion()">Prev</button>
+        <button class="btn" (click)="nextQuestion()">Next</button>
+        <button class="btn submit-btn" *ngIf="i === quiz.length - 1" (click)="submitQuiz()">Submit</button>
+      </div>
+    </section>
+    <section class="explanation-section">
+      <h2 class="section-title">Explanation</h2>
+      <p class="explanation-text">Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor
+        incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris
+        nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum
+        dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia
+        deserunt mollit anim id est laborum.</p>
+    </section>
+    <section class="questions-nav-section">
+      <p class="question-context">
+        <a><span class="question-num">Question {{i+1}}/{{quiz.length}}</span></a>
+
+      </p>
+      <div class="d-flex">
+        <ul class="question-nums-list">
+          <li *ngFor="let quizQuestion of quiz; let i=index" (click)="changeQuestion(i)"><a class="done">{{i+1}}</a>
+          </li>
+        </ul>
+      </div>
+    </section>
+  </div>
+</main>

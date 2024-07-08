@@ -1,0 +1,17 @@
+<section>
+    <div class="container mt-5">
+        <div class="row">
+            <div class="col-sm-12" *ngFor="let notification of notifications">
+                <div class="alert fade alert-simple alert-primary alert-dismissible text-left font__family-montserrat font__size-16 font__weight-light brk-library-rendered rendered show"
+                    role="alert">
+                    <button type="button" class="close font__size-18" (click)="deleteNotification(notification._id)">
+                        <span aria-hidden="true">&times;</span>
+                        <span class="sr-only">Close</span>
+                    </button>
+                    <i class="start-icon fa fa-thumbs-up faa-bounce animated"></i>
+                    <strong class="font__weight-semibold">{{ notification.message }}</strong>
+                </div>
+            </div>
+        </div>
+    </div>
+</section>

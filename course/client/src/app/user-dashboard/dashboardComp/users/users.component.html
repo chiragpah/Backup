@@ -1,0 +1,54 @@
+<div class="table-responsive">
+  <table class="table table-hover table-nowrap">
+    <thead class="thead-light">
+      <tr>
+        <th scope="col" style="text-align: center;">Name</th>
+        <th scope="col" style="text-align: center;">Date</th>
+        <th scope="col" style="text-align: center;">Email</th>
+        <th scope="col">Role</th>
+        <th scope="col" style="text-align: center;">ID</th>
+        <th></th>
+      </tr>
+    </thead>
+    <tbody>
+      <tr *ngFor="let user of usersres">
+        <td>
+          <img alt="..." [src]="user.avatar.url" class="avatar avatar-sm rounded-circle me-2">
+          <a class="text-heading font-semibold" href="#">
+            {{ user.name }}
+          </a>
+        </td>
+        <td>
+          {{ user.createdAt | date: 'MMM d, yyyy' }}
+        </td>
+        <td>
+          <img alt="..." src="../../../../assets/gmail.png" style="height: 20px; padding-right: 0.5rem;">
+          <a class="text-heading font-semibold" href="#">
+            {{user.email}}
+          </a>
+        </td>
+        <td>
+          {{user.role}}
+        </td>
+        <td>
+          <span class="badge badge-lg badge-dot">
+            <i class="bg-success"></i>{{user._id}}
+          </span>
+        </td>
+        <td class="text-end">
+
+          <button type="button" class="btn btn-sm btn-square btn-neutral text-danger-hover custom-btn"
+            (click)="deleteUser(user)">
+            <i class="bi bi-trash"></i>
+          </button>
+        </td>
+      </tr>
+
+
+
+
+
+
+    </tbody>
+  </table>
+</div>

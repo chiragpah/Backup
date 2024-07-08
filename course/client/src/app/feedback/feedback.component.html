@@ -1,0 +1,121 @@
+<!-- <div class="feedback-form">
+    <h2 style="text-align: center;">Feedback Form</h2>
+    <form (ngSubmit)="submitFeedback()" #feedbackForm="ngForm" novalidate>
+     
+   
+      
+        <div class="form-group">
+            <label for="comment">Message:</label>
+            <textarea id="comment" name="comment" [(ngModel)]="formData.comment" required #comment="ngModel"></textarea>
+            <div *ngIf="comment.errors?.['required'] && (comment.dirty ||comment.touched)" class="error-message">
+                <div *ngIf="comment.errors?.['required']">Message is required.</div>
+            </div>
+        </div>
+        <div class="form-group">
+            <label for="rating">Rating:</label>
+            <div class="star-rating">
+                <app-star-rating (ratingSelected)="onRatingSelected($event)"></app-star-rating>
+            </div>
+            <input type="hidden" id="rating" name="rating" [(ngModel)]="formData.rating">
+            <span *ngIf="!ratingSelected" class="error-message"></span>
+        </div>
+        <br>
+        <button type="submit" [disabled]="feedbackForm.invalid || !ratingSelected">Submit</button>
+    </form>
+</div> -->
+<div class="feedback_container">
+    <div class="feedback_subcontainer1">
+        <img src="../../assets/avatar.png" width="50" height="50" alt="" class="profile_image">
+        <div class="user_review_textbox">
+            <h5 class="user_review_label">Give a Rating <span class="text-red-500">*</span>
+            </h5>
+            <div class="user_review_textbox_container">
+                <svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                    class="mr-1 cursor-pointer" color="rgb(246,186,0)" height="25" width="25"
+                    xmlns="http://www.w3.org/2000/svg" style="color: rgb(246, 186, 0);" (click)="setRating(1)"
+                    [class.active]="rating >= 1">
+                    <path
+                        d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z">
+                    </path>
+                </svg><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                    class="mr-1 cursor-pointer" color="rgb(246,186,0)" height="25" width="25"
+                    xmlns="http://www.w3.org/2000/svg" style="color: rgb(246, 186, 0);" (click)="setRating(2)"
+                    [class.active]="rating >= 2">
+                    <path *ngIf="rating > 1"
+                        d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z">
+                    </path>
+                    <path
+                        d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3zM664.8 561.6l36.1 210.3L512 672.7 323.1 772l36.1-210.3-152.8-149L417.6 382 512 190.7 606.4 382l211.2 30.7-152.8 148.9z">
+                    </path>
+                </svg><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                    class="mr-1 cursor-pointer" color="rgb(246,186,0)" height="25" width="25"
+                    xmlns="http://www.w3.org/2000/svg" style="color: rgb(246, 186, 0);" (click)="setRating(3)"
+                    [class.active]="rating >= 3">
+                    <path *ngIf="rating > 2"
+                        d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z">
+                    </path>
+                    <path
+                        d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3zM664.8 561.6l36.1 210.3L512 672.7 323.1 772l36.1-210.3-152.8-149L417.6 382 512 190.7 606.4 382l211.2 30.7-152.8 148.9z">
+                    </path>
+                </svg><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                    class="mr-1 cursor-pointer" color="rgb(246,186,0)" height="25" width="25"
+                    xmlns="http://www.w3.org/2000/svg" style="color: rgb(246, 186, 0);" (click)="setRating(4)"
+                    [class.active]="rating >= 4">
+                    <path *ngIf="rating > 3"
+                        d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z">
+                    </path>
+                    <path
+                        d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3zM664.8 561.6l36.1 210.3L512 672.7 323.1 772l36.1-210.3-152.8-149L417.6 382 512 190.7 606.4 382l211.2 30.7-152.8 148.9z">
+                    </path>
+                </svg><svg stroke="currentColor" fill="currentColor" stroke-width="0" viewBox="0 0 1024 1024"
+                    class="mr-1 cursor-pointer" color="rgb(246,186,0)" height="25" width="25"
+                    xmlns="http://www.w3.org/2000/svg" style="color: rgb(246, 186, 0);" (click)="setRating(5)"
+                    [class.active]="rating >= 5">
+                    <path *ngIf="rating > 4"
+                        d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z">
+                    </path>
+                    <path
+                        d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3zM664.8 561.6l36.1 210.3L512 672.7 323.1 772l36.1-210.3-152.8-149L417.6 382 512 190.7 606.4 382l211.2 30.7-152.8 148.9z">
+                    </path>
+                </svg>
+            </div>
+            <textarea [(ngModel)]="feedbackText" name="" id="" cols="40" rows="5" placeholder="Write your comment..."
+                class="review_textbox_content">
+
+        </textarea>
+        </div>
+
+    </div>
+    <div class="user_review_submit_container" (click)="submitFeedback()">
+
+        <div class="user_review_submit_btn">Submit</div>
+
+    </div>
+    <br>
+    <div class="feedback_subcontainer3">
+
+    </div>
+    <div class="feedback_subcontainer4" *ngFor="let review of this.course">
+        <div class="feedback_subcontainer4_displaybox">
+            <div class="subcontainer4_reviewerbox">
+                <div>
+                    <img [src]="review.user.avatar.url" width="50" height="50" alt="" class="profile_image ">
+                </div>
+                <div class="feedback_display_section">
+                    <h1 class="username">{{review.user.name}}</h1>
+                    <div class="rating_display"> <svg stroke="currentColor" fill="currentColor" stroke-width="0"
+                            viewBox="0 0 1024 1024" color="#f6b100" class="mr-2 cursor-pointer" height="20" width="20"
+                            xmlns="http://www.w3.org/2000/svg" style="color: rgb(246, 177, 0);"
+                            *ngFor="let star of generateRange(review.rating)">
+                            <path
+                                d="M908.1 353.1l-253.9-36.9L540.7 86.1c-3.1-6.3-8.2-11.4-14.5-14.5-15.8-7.8-35-1.3-42.9 14.5L369.8 316.2l-253.9 36.9c-7 1-13.4 4.3-18.3 9.3a32.05 32.05 0 0 0 .6 45.3l183.7 179.1-43.4 252.9a31.95 31.95 0 0 0 46.4 33.7L512 754l227.1 119.4c6.2 3.3 13.4 4.4 20.3 3.2 17.4-3 29.1-19.5 26.1-36.9l-43.4-252.9 183.7-179.1c5-4.9 8.3-11.3 9.3-18.3 2.7-17.5-9.5-33.7-27-36.3z">
+                            </path>
+                        </svg></div>
+                    <p class="user_review_txt">{{review.comment}}
+                    </p>
+                </div>
+            </div>
+        </div>
+    </div>
+
+</div>

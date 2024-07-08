@@ -1,0 +1,31 @@
+<div style="display: flex; justify-content: center; align-items: center; margin: 5rem;">
+  <main>
+    <img class="headset" [src]="course.course.thumbnail.url" alt="headphones set with pink color" />
+
+    <div id="cart-text">
+      <button class="free-shipping">No Additional Charges</button>
+      <h1>{{course.course.name}}</h1>
+      <h3>{{course.course.description}}</h3>
+      <h3 style="text-decoration: line-through; margin-bottom: 1rem;">${{course.course.estimatedPrice}} </h3>
+      <h1 style="margin-bottom: 1rem;">$ {{amount}}</h1>
+      <h3>Validity:Lifetime</h3>
+      <h3>Created As:Personal Course</h3>
+      <h3>
+        The offer is valid until April 10, or until enrollment capacity is reached!</h3>
+
+
+
+      <div id="buttons" style="width: 100%;">
+
+
+        <div style="display: flex; justify-content: center; align-items: center; width: 100%; ">
+          <div #paymentRef style="width: 100%; color: white;"></div>
+        </div>
+
+
+
+
+      </div>
+    </div>
+  </main>
+</div>

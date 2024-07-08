@@ -1,0 +1,25 @@
+<!-- -------------------------------------------------------------------------------------------------------------------------------------------- -->
+<div class="grid_box">
+
+
+    <div class="container" *ngFor="let announce of displayedAnnouncements">
+
+        <img [src]="announce.thumbnailUrl" alt="Announcement Image" class="thumbnail_img"> <br />
+
+        <h1 class="title_txt">
+
+            <span class="course_name">{{announce.title}}</span>
+        </h1>
+        <div class="desc_txt">
+
+            <span class="course_name"> {{ announce.description }}</span>
+        </div>
+
+
+        <div class="launch_date">Release Date: {{ announce.launchDate | date: 'longDate' }}</div>
+
+    </div>
+</div>
+
+<mat-paginator class="paginator" [length]="announcements.length" [pageSize]="6" (page)="onPageChange($event)">
+</mat-paginator>

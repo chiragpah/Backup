@@ -1,0 +1,103 @@
+<div class="main">
+  <div class="container" style="width: 100%;">
+    <div class="left">
+      <nav class="main-menu">
+        <div>
+          <div class="user-info">
+            <img [src]="profileUrl" alt="user.avatar.url" />
+            <p>{{user?.name}}</p>
+          </div>
+          <ul>
+            <li class="nav-item" (click)="showComponent(1)" [ngClass]="{'active': currentComponent === 1}">
+              <a>
+                <i class="fas fa-tachometer-alt nav-icon"></i>
+                <span class="nav-text">Dashboard</span>
+              </a>
+            </li>
+            <li class="nav-item" (click)="showComponent(2)" [ngClass]="{'active': currentComponent === 2}">
+              <a>
+                <i class="fa fa-user nav-icon"></i>
+                <span class="nav-text">Profile</span>
+              </a>
+            </li>
+            <li class="nav-item" (click)="showComponent(3)" [ngClass]="{'active': currentComponent === 3}">
+              <a>
+                <i class="fas fa-lock nav-icon"></i>
+                <span class="nav-text1">Change Password</span>
+              </a>
+            </li>
+
+            <li class="nav-item" (click)="gotoAdminPage()" *ngIf="showAdmin">
+              <a>
+                <i class="fas fa-user-shield nav-icon"></i>
+
+                <span class="nav-text">Admin</span>
+              </a>
+            </li>
+
+            <li class="nav-item" (click)="showComponent(4)" [ngClass]="{'active': currentComponent === 4}"
+              *ngIf="!showAdmin">
+              <a>
+                <sup>{{ announcementCount | async }}</sup><i class="fas fa-solid fa-bullhorn nav-icon"
+                  style="padding-left: 0.25rem;"></i>
+                <!-- <span class="nav-text">Announcements  </span> -->
+                <span class="nav-text">Announcements </span>
+              </a>
+            </li>
+
+            <!-- admin Announcements -->
+            <li class="nav-item" (click)="showComponent(5)" [ngClass]="{'active': currentComponent === 5}"
+              *ngIf="showAdmin">
+              <a>
+                <i class="fas fa-solid fa-bullhorn nav-icon"></i>
+                <span class="nav-text">Announcements</span>
+              </a>
+            </li>
+
+
+
+
+            <li class="nav-item" (click)="logout()">
+              <a href="#">
+                <i class="fas fa-sign-out-alt nav-icon"></i>
+                <span class="nav-text">Logout</span>
+              </a>
+            </li>
+          </ul>
+        </div>
+
+
+
+
+
+      </nav>
+    </div>
+
+    <div class="right">
+      <div *ngIf="currentComponent === 1" class="marginSpace">
+        <app-dashboard></app-dashboard>
+      </div>
+      <div *ngIf="currentComponent === 2" class="marginSpace">
+        <app-my-account></app-my-account>
+      </div>
+      <div *ngIf="currentComponent === 3" class="marginSpace">
+        <app-change-password></app-change-password>
+      </div>
+      <!-- <div *ngIf="currentComponent === 4">
+        <app-my-courses></app-my-courses>
+      </div> -->
+      <!-- <div *ngIf="currentComponent=== 4" class="marginSpace">
+        <app-admin></app-admin>
+      </div> -->
+      <div *ngIf="currentComponent=== 4" class="marginSpace">
+        <app-announcement></app-announcement>
+      </div>
+      <div *ngIf="currentComponent=== 5" class="marginSpace">
+        <app-announcement-form></app-announcement-form>
+      </div>
+      <div *ngIf="currentComponent=== 6" class="marginSpace">
+        <app-notifications-user [newNotificationsCount$]="newNotificationsCount"></app-notifications-user>
+      </div>
+    </div>
+  </div>
+</div>

@@ -1,0 +1,16 @@
+<app-loader *ngIf="isLoading"></app-loader>
+
+<div *ngIf="!isLoading">
+    <app-header (openLoginModalEvent)="openLoginModal()"></app-header>
+    <app-login *ngIf="isModalOpen" (switchToSignupClicked)="toggleSignupModal()"
+        (closeLogin)="closeLoginModal()"></app-login>
+    <app-registration (closeLogin)="closeLoginModal()" *ngIf="signupModalVisible"
+        (switchToLoginClicked)="toggleLoginModal()"></app-registration>
+    <router-outlet></router-outlet>
+    <app-footer></app-footer>
+</div>
+
+
+
+
+<!-- <app-courseplayer></app-courseplayer>   -->

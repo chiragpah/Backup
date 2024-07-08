@@ -1,0 +1,29 @@
+<div class="container">
+    <form (ngSubmit)="previewAnnouncement()" class="form">
+
+        <div class="subtitle">Unveiling Our Newest Announcement!</div>
+        <div class="input-container ic1">
+            <label for="thumbnail" class="form_label">Title:</label>
+            <input type="text" class="input" name="title" [(ngModel)]="title">
+            <div class="cut"></div>
+        </div>
+        <div class="input-container ic1">
+            <label for="thumbnail" class="form_label">Thumbnail:</label>
+            <input type="file" id="thumbnail" accept="image/*" (change)="onFileSelected($event)" class="input">
+            <div class="cut"></div>
+        </div>
+        <div class="input-container ic2">
+            <label for="launchDate" class="form_label">Launch Date:</label>
+            <input type="date" id="launchDate" name="launchDate" [(ngModel)]="launchDate" class="input" [min]="minDate">
+        </div>
+        <div class="input-container ic2">
+            <label for="description" class="form_label">Description:</label><br>
+            <textarea id="description" name="description" rows="4" cols="50" [(ngModel)]="description"
+                class="input"></textarea><br>
+        </div>
+        <button type="text" class="submit">submit</button>
+
+    </form>
+
+
+</div>
