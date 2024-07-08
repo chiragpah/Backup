@@ -1,0 +1,14 @@
+{"seats": [
+    [
+      {
+        "name": "A1",
+        "status": "available",
+        "price": 300
+      },
+      {
+        "name": "A2",
+        "status": "available",
+        "price": 300
+      }
+    ]  ]
+}

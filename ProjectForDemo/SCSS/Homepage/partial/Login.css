@@ -1,0 +1,106 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+
+
+
+
+main {
+  box-sizing: border-box;
+  display: flex;
+  flex-direction: column;
+  justify-content: center;
+  align-items: center;
+  min-height: 50vh;
+  width: 100%;
+  background: rgba(16, 14, 30, 1);
+
+
+  padding: 40px 20px;
+}
+
+.login {
+  width: 400px;
+  height: 450px;
+  background-color: whitesmoke;
+  -webkit-backdrop-filter: blur(10px);
+  backdrop-filter: blur(10px);
+  border: 2px solid #000;
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+}
+
+span {
+  color: #000;
+}
+
+
+.btn:focus {
+  transform: scale(0.97);
+}
+
+/* Inputs and Labels */
+.txtLogin {
+  width: 100%;
+  padding: 12px 20px;
+  border: 2px solid #000;
+  outline: 0;
+  border-radius: 5px;
+  background-color: transparent;
+  margin: 10px 0 18px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.5s;
+  color: #000;
+}
+
+input:focus {
+  border: 2px solid #000;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #000;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+.loginlabel {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #000;
+}
+
+/* Login Button */
+/* Links */
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+a {
+  color: #000;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+  transition: all 0.4s ease;
+}
+
+a:hover {
+  color: rgb(13, 133, 185);
+}
+
+/*# sourceMappingURL=Login.css.map */

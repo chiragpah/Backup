@@ -1,0 +1,107 @@
+{
+
+"Visitmovies":[
+    {
+        "id":1,
+        "name": "Time To Explore",
+        "image":"/Assests/Images/3.png",
+        "EventDescription":"Movie based on real life experiences. Its time to explore again.",
+        "ticketprice":"250",
+        "organiserContactNumber":"7891263526",
+        "LeadImage":""
+    },
+    {
+        "id":2,
+        "name": "Posterize Photo Effect",
+        "image":"/Assests/Images/1.png",
+        "EventDescription":"We're Thinking Out loud here, but this movie depicts our life in photo effects",
+        "location":"Bangalore",
+        "date":"25 April 2023",
+        "time":"4:30pm - 6:45pm",
+        "ticketprice":"250",
+        "organiserContactNumber":"7891263526",
+        "LeadImage":""
+    },
+    
+    {
+        "id":3,
+        "name": "Lost And Found",
+        "image":"/Assests/Images/4.jpg",
+        "EventDescription":"It depicts life of girl who finds herself while losing interest in outer world.",
+        "location":"Bangalore",
+        "date":"24 December 2025",
+        "time":"4:30pm",
+        "ticketprice":"500",
+        "organiserContactNumber":"7891263526",
+        "LeadImage":""
+    },
+
+    {
+        "id":4,
+        "name": "Magic Night",
+        "image":"/Assests/Images/8.png",
+        "EventDescription":"Magician girl Movie",
+        "location":"Bangalore",
+        "date":"24 December 2025",
+        "time":"4:30pm",
+        "ticketprice":"250",
+        "organiserContactNumber":"7891263526",
+        "LeadImage":""
+    }
+
+],
+"Visitevents":[
+    {
+        "id":1,
+        "name": "Electro music festival",
+        "image":"/Assests/Images/2.png",
+        "EventDescription":"After the great success of his previous show 'Bash' ,John Hardwall is coming back to perform live on stage. This time, he will bring a whole new set of funny stories and jokes that will keep you entertained. Get ready to enjoy an exciting and hilarious performance that will make you laugh uncontrollably and leave you in high spirits.",
+        "location":"Pune",
+        "date":"25-12-2024",
+        "time":"9pm",
+        "ticketprice":"2000",
+        "organiserContactNumber":"7891263526",
+        "LeadImage":""
+    },
+    
+    {
+        "id":2,
+        "name": "Jazz Concert",
+        "image":"/Assests/Images/5.png",
+        "EventDescription":"Best Jazz concert",
+        "location":"Bangalore",
+        "date":"24 December 2025",
+        "time":"4:30pm",
+        "ticketprice":"250",
+        "organiserContactNumber":"7891263526",
+        "LeadImage":""
+    },
+
+    {
+        "id":3,
+        "name": "City Sound",
+        "image":"/Assests/Images/9.jpg",
+        "EventDescription":"Night concert performance by nation stars",
+        "location":"Bangalore",
+        "date":"12 March 2024",
+        "time":"4:30pm",
+        "ticketprice":"1500",
+        "organiserContactNumber":"7891263526",
+        "LeadImage":""
+    },
+
+   {
+        "id":4,
+        "name": "Make It Real",
+        "image":"/Assests/Images/6.png",
+        "EventDescription":"Anubhav Singh with other stunning performance of year.",
+        "location":"SAIDelhi",
+        "date":"8 March 2024",
+        "time":"11am",
+        "ticketprice":"500",
+        "organiserContactNumber":"7891263526",
+        "LeadImage":""
+    }
+]
+      
+}

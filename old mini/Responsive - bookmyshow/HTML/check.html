@@ -1,0 +1,63 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Calculator</title>
+</head>
+<body>
+
+
+    <!-- index.html -->
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Bill Calculator</title>
+</head>
+<body>
+
+    <form id="billForm">
+        <label for="quantity">Quantity:</label>
+        <input type="number" id="quantity" required>
+
+        <label for="pricePerUnit">Price Per Unit:</label>
+        <input type="number" id="pricePerUnit" required>
+
+        <button type="button" onclick="calculateTotal()">Calculate Total</button>
+    </form>
+
+    <p id="result"> Stores result</p>
+
+    <script src="/JS/controller/bill_controller.js" type="module"></script>
+
+    <script src="controller.js"></script>
+</body>
+</html>
+
+
+    <script>
+        // Function to calculate the total bill
+        function calculateBill(quantity, pricePerUnit) {
+            if (quantity < 0 || pricePerUnit < 0) {
+                // Check for invalid inputs
+                return "Invalid input. Please enter positive values for quantity and price per unit.";
+            } else {
+                // Calculate the total amount
+                var totalAmount = quantity * pricePerUnit;
+                return totalAmount;
+            }
+        }
+
+        // Example usage:
+        var quantity = 5;
+        var pricePerUnit = 10;
+        var totalBill = calculateBill(quantity, pricePerUnit);
+
+        // Display the result
+        console.log("Total Bill: $" + totalBill);
+    </script>
+
+</body>
+</html>

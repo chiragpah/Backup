@@ -1,0 +1,14 @@
+.redColor {
+    color: red;
+}
+
+body {
+
+    background-size: contain;
+    background-color: rgba(16, 14, 30, 1);
+}
+
+.stylecontainer {
+    background-color: rgba(16, 14, 30, 1);
+    padding: 2%;
+}

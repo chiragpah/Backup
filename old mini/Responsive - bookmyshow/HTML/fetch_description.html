@@ -1,0 +1,29 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="/JS/plugins/all_cdn.js"></script>
+</head>
+<body>
+    <h1 id="itemName"></h1>
+    <div id =""
+    <img src="" id="itemPrice">
+    
+
+    <div class="details_overview_container"></div>
+    <script>
+        const urlParams = new URLSearchParams(window.location.search);
+        const itemName = urlParams.get('id'); 
+        const itemPrice = urlParams.get('image');
+
+        document.getElementById('itemName').textContent = itemName;
+        document.getElementById('itemPrice').textContent = itemPrice;
+    </script>
+
+    <script src="/JS/controller/updat.js" type="module"></script>
+    <script src="/JS/controller/Movie_Details_controller.js" type="module"></script>
+    <script src="/JS/controller/Mainpage_movie_controller.js" type="module"></script>
+</body>
+</html>

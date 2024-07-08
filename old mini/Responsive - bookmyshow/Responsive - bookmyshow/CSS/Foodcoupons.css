@@ -1,0 +1,17 @@
+.main-box {
+  display: flex;
+  width: 100%;
+  background-image: url("");
+  background-size: cover;
+  background-color: grey;
+}
+
+.food-section {
+  width: 70%;
+  height: 800px;
+  margin-left: 20px;
+  background-color: cornflowerblue;
+  margin-top: 20px;
+  border: 1px solid black;
+  border-radius: 10px;
+}/*# sourceMappingURL=Foodcoupons.css.map */

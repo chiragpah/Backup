@@ -1,0 +1,120 @@
+{
+    "Artists": [
+        {
+            "Artistid": 330,
+            "Mid": 10,
+            "ArtistName": "Sharukh Khan",
+            "ArtistImage": "/Artist_bio/ArtistImages/shah-rukh-khan-2092-12-09-2017-02-10-43.webp",
+            "ArtistData": "Hailed as the world`s biggest superstar and the King of Bollywood, Shah Rukh Khan is a phenomenon like no other. From his humble beginnings as an outsider in a largely dynastic Hindi cinema to earning the numero uno position in the industry, his rise might seem like a fairytale; but is in fact a testament to the actor`s sheer talent, infectious energy and hard work. ",
+            "ArtistDob": "November 2,1965",
+            "BirthPlace": "New Delhi, Delhi, India",
+            "Occupation": "Actor Producer  Special Appearances  Voice Cast",
+            "ArtistData2": "Born on the 2nd of November, 1965 in New Delhi, Khan spent the first five years of his life with his maternal grandfather in Mangalore. He then moved back to New Delhi, where his family lived in rented apartments. Khan then joined St. Colombia`s School in New Delhi, where he excelled in both studies and sports such as football and hockey. He was also the recipient of his school`s highest award, the Sword of Honor."
+        },
+        {
+            "Artistid": 331,
+            "Mid": 11,
+            "ArtistName": "Taapsee Pannu",
+            "ArtistImage": "/Artist_bio/ArtistImages/taapsee-pannu-20499-1702983209.webp",
+            "ArtistData": "Hailed as the world`s biggest superstar and the King of Bollywood, Shah Rukh Khan is a phenomenon like no other. From his humble beginnings as an outsider in a largely dynastic Hindi cinema to earning the numero uno position in the industry, his rise might seem like a fairytale; but is in fact a testament to the actor`s sheer talent, infectious energy and hard work. ",
+            "ArtistDob": "November 2,1965",
+            "BirthPlace": "New Delhi, Delhi, India",
+            "Occupation": "Actor Producer  Special Appearances  Voice Cast",
+            "ArtistData2": "Born on the 2nd of November, 1965 in New Delhi, Khan spent the first five years of his life with his maternal grandfather in Mangalore. He then moved back to New Delhi, where his family lived in rented apartments. Khan then joined St. Colombia`s School in New Delhi, where he excelled in both studies and sports such as football and hockey. He was also the recipient of his school`s highest award, the Sword of Honor."
+        },
+        {
+            "Artistid": 332,
+            "Mid": 11,
+            "ArtistName": "Boman Irani",
+            "ArtistImage": "/Artist_bio/ArtistImages/boman-irani-339-24-11-2017-07-48-52.webp",
+            "ArtistData": "Hailed as the world`s biggest superstar and the King of Bollywood, Shah Rukh Khan is a phenomenon like no other. From his humble beginnings as an outsider in a largely dynastic Hindi cinema to earning the numero uno position in the industry, his rise might seem like a fairytale; but is in fact a testament to the actor`s sheer talent, infectious energy and hard work. ",
+            "ArtistDob": "November 2,1965",
+            "BirthPlace": "New Delhi, Delhi, India",
+            "Occupation": "Actor Producer  Special Appearances  Voice Cast",
+            "ArtistData2": "Born on the 2nd of November, 1965 in New Delhi, Khan spent the first five years of his life with his maternal grandfather in Mangalore. He then moved back to New Delhi, where his family lived in rented apartments. Khan then joined St. Colombia`s School in New Delhi, where he excelled in both studies and sports such as football and hockey. He was also the recipient of his school`s highest award, the Sword of Honor."
+        }
+    ],
+    "Movies": [
+        {
+            "id": 10,
+            "movie_name": "Salaar:Cease Fire",
+            "category": "Action",
+            "Release_date": "2023",
+            "Description": "Brace yourself for an extraordinary tale of rebellion filled with power-packed action.",
+            "Movie_image": "",
+            "Cast": [
+                "Prabhas",
+                "Shruti Haasan",
+                "Prithviraj Sakumaran"
+            ],
+            "Cast_images": [
+                "",
+                "",
+                ""
+            ],
+            "Duration": "2h 55min",
+            "review": "8",
+            "Trailer": ""
+        },
+        {
+            "id": 11,
+            "movie_name": "Dunki",
+            "category": "Comedy",
+            "Release_date": "14 December 2023",
+            "Description": "About the movie Four friends from a sleepy little village in Punjab share a common dream to go to England.Their problem is that they have neither the visa nor the ticket. A soldier alights from a train one day, and their lives change. He gives them a soldier`s promise: He will take them to the land of their dreams.What follows is a hilarious and heartwarming tale of a perilous journey through the desert and the sea, but most crucially through the hinterlands of their mind.A journey that tests and defines them: their courage, their smarts, and the strain of their conflicting ideologies.Dunki is a saga of friendships, borders, nostalgia for home and love that towers above it all",
+            "Movie_image": "/Images/Dunki.jpg",
+            "Cast": [
+                "Sharukh Khan",
+                "Taapsee Pannu",
+                "Boman Irani",
+                "Vicky Kaushal"
+            ],
+            "ArtistID": [
+                330,
+                331,
+                332
+            ],
+            "Cast_img": [
+                "/Images/shah-rukh-khan-2092-12-09-2017-02-10-43.webp",
+                "/Images/taapsee-pannu-20499-1702983209.webp",
+                "/Images/boman-irani-339-24-11-2017-07-48-52.webp",
+                "/Images/vicky-kaushal-32264-1685966478.webp"
+            ],
+            "Duration": "2h 41min",
+            "review": "8.5",
+            "Trailer": ""
+        },
+        {
+            "id": 12,
+            "movie_name": "Animal",
+            "category": "Drama",
+            "Release_date": "2023",
+            "Description": "About the movie This is the story of a son whose love for his father knows no bounds. As their bond begins to fracture, a chain of extraordinary events unfold causing the son to undergo a remarkable transformation consumed by a thirst for vengeance.",
+            "images": "",
+            "Cast": [
+                "Ranbir Kapoor",
+                "Anil Kapoor"
+            ],
+            "Cast_img": [],
+            "Duration": "3h 21min",
+            "review": "8.3",
+            "Trailer": ""
+        },
+        {
+            "id": 13,
+            "movie_name": "Sam Bahadur",
+            "category": "Biography",
+            "Release_date": "2023",
+            "Description": "About the movie Sam Bahadur is a tribute to Field Marshal Sam HFJ Manekshaw, MC, India`s first Field Marshal and a legendary Army General. His career witnessed the shaping of India`s geopolitical borders, and his life was marked by significant milestones, from fighting in World War II to being the Chief of Army Staff during the 1971 Indo-Pakistan war, that led to the creation of Bangladesh. This RSVP film explores his dynamic personality and his unparalleled military career, offering a glimpse into the life of a no-nonsense Army Commander, also known as `Sam Bahadur` by the soldiers he led",
+            "images": "",
+            "Cast": [
+                "Vicky Kaushal",
+                "Fatima Sama Shaikh"
+            ],
+            "Cast_img": [],
+            "Duration": "2h 30m",
+            "review": "9",
+            "Trailer": ""
+        }
+    ]
+}

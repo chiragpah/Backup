@@ -1,0 +1,8 @@
+.titlebar,
+.theaterlist {
+    background-color: rgba(16, 14, 30, 1);
+}
+
+.time:hover {
+    color: crimson;
+}

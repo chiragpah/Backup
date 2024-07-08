@@ -1,0 +1,100 @@
+@import url("https://fonts.googleapis.com/css2?family=Quicksand:wght@300;400;500;600;700&display=swap");
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+  font-family: "Quicksand", sans-serif;
+}
+
+span {
+  color: red;
+}
+
+.card {
+  width: 400px;
+  height: 450px;
+  background-color: transparent;
+  -webkit-backdrop-filter: blur(10px);
+          backdrop-filter: blur(10px);
+  border-color: #fff;
+}
+
+.btn:focus {
+  transform: scale(0.97);
+}
+
+.btn:hover {
+  background-color: #fff;
+  color: #000;
+  font-weight: bold;
+}
+
+.btn {
+  gap: 5px;
+  width: 100%;
+  height: 46px;
+  cursor: pointer;
+  transition: transform 0.1s ease, background-color 0.5s, color 0.5s;
+}
+
+/* Inputs and Labels */
+input {
+  width: 100%;
+  padding: 12px 20px;
+  border: 2px solid #ccc;
+  outline: 0;
+  border-radius: 5px;
+  background-color: transparent;
+  margin: 10px 0 18px;
+  font-size: 0.85rem;
+  font-weight: 600;
+  transition: all 0.5s;
+  color: #fff;
+}
+
+input:focus {
+  border: 2px solid #fff;
+}
+
+input:-webkit-autofill,
+input:-webkit-autofill:hover,
+input:-webkit-autofill:focus,
+input:-webkit-autofill:active {
+  -webkit-background-clip: text;
+  -webkit-text-fill-color: #fff;
+  -webkit-transition: background-color 5000s ease-in-out 0s;
+  transition: background-color 5000s ease-in-out 0s;
+}
+
+label {
+  font-weight: 600;
+  font-size: 0.9rem;
+  color: #fff;
+}
+
+/* Login Button */
+/* Links */
+.links {
+  display: flex;
+  flex-direction: row;
+  justify-content: space-between;
+}
+
+a:link,
+a:visited,
+a:hover,
+a:active {
+  text-decoration: none;
+}
+
+a {
+  color: #fff;
+  font-size: 0.88rem;
+  font-weight: 600;
+  letter-spacing: -1px;
+  transition: all 0.4s ease;
+}
+
+a:hover {
+  color: rgb(13, 133, 185);
+}/*# sourceMappingURL=Login.css.map */

@@ -1,0 +1,22 @@
+.navbar {
+    background-color: black;
+}
+
+#city {
+    color: coral;
+    font-size: large;
+}
+
+
+#signin {
+    height: 40px;
+    width: 120px;
+    font-style: normal;
+    color: black;
+    border: 1px solid crimson;
+}
+
+#signin:hover {
+    height: 42px;
+    width: 125px;
+}

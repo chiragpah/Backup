@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="en">
+
+<head>
+  <meta charset="utf-8">
+  <meta name="viewport" content="width=device-width, initial-scale=1">
+  <title>Bootstrap demo</title>
+  <!-- <link rel="stylesheet" href="/css/login.css"> -->
+  <script src="../JS/Plugins/all_cdn.js"></script>
+  <link rel="stylesheet" href="/SCSS/Homepage/partial/Login.css">
+  <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+   <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body> 
+  <main>
+    <!-- <div class="right-side"> -->
+    <div class="card p-5 ">
+      <form id="otpForm">
+        <span class="redColor text-danger" id="wrongOTP"></span><br>
+        <label for="otp">OTP:</label>
+        <input type="text" id="otp" placeholder="Enter otp" name="otp" required />
+
+        <button type="submit" class="btn btn-primary text-center mb-5 mt-4">Continue</button>
+        <div class="links">
+          <a href="../HTML/NewloginUser.html">Login</a>
+          <a href="../HTML/NewRegistrationUser.html">Do not have an account?</a>
+        </div>
+      </form>
+    </div>
+
+  </main>
+  <script src="../JS/Controller/otp.js"></script>
+</body>
+
+</html>

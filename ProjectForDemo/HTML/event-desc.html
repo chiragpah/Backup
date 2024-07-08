@@ -1,0 +1,44 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/SCSS/EventCSS/visit.css">
+    <script src="/JS/Plugins/all_cdn.js"></script>
+    <script src="/JS/Header/header.js"></script>
+    <link rel="stylesheet" href="/SCSS/Homepage/visit.css">
+    <script src="/JS/Controller/LoginCheck.js"></script>
+    <script src="/JS/Footer/Footer.js"></script>
+    <script src="/JS/Controller/load-event.js" type="module"></script>
+    <script  src="/JS/Controller/eventDescription.js" type="module"></script>
+  
+    <style>
+        .parent{
+            display: flex;
+            justify-content: space-between;
+        }
+        #event-image{
+            width: 500px;
+            padding-right: 20px;
+        }
+    </style>
+    <script src="https://ajax.googleapis.com/ajax/libs/jquery/3.7.1/jquery.min.js"></script>
+    <script src="https://cdn.jsdelivr.net/npm/axios/dist/axios.min.js"></script>
+
+</head>
+
+<body>
+    <div class="parent">
+        <div>
+            <img src="" id="event-image" alt="">
+        </div>
+        <div>
+            <h1 id="event-name"></h1>
+            <p id="artist-name"></p>
+            <p id="description"></p>
+        </div>
+    </div>
+    <!-- <script src="../JS/Controller/event.js"></script> -->
+</body>
+</html>

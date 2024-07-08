@@ -1,0 +1,26 @@
+{
+    "UserInfo":[
+        {
+        "userId":"Chirag@123",
+        "userFullName":"Chirag Pahlajani",
+        "userPassword":"Chirag@1308",
+        "userEmail":"chiragpah@cybage.com",
+        "userFavArtist":"Rabir Kapoor",
+        "userFavCategory":"Science-Fiction",
+        "userContact":9518743461,
+        "id":1
+      },
+      {
+        "userid":"Buddhabhushan@1",
+        "userFullName":"Buddhabhushan",
+        "userPassword":"Buddhabhushan@23",
+        "userEmail":"Buddhabhushan@cybage.com",
+        "userFavArtist":"Sharukh khan",
+        "userFavCategory":"Action",
+        "userContact":9323232320,
+        "id":2
+      }
+    
+      ]
+      
+}

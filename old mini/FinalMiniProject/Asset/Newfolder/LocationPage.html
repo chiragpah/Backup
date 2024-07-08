@@ -1,0 +1,255 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+    <script src="/Newfolder/all_cdn.js"></script>
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.7.0/css/font-awesome.min.css"
+    />
+    <script src="/Newfolder/Location.js"></script>
+    <style>
+      .div_style {
+        width: 750px;
+      }
+      li {
+        text-decoration: none;
+      }
+      #myInput {
+        height: 100%;
+        width: 700px;
+        border: none;
+      }
+      #txt {
+        padding: 10px 0px 0px 10px;
+        display: inline;
+      }
+      @media (max-width: 800px) {
+        #myInput,
+        .div_style {
+          width: 200px;
+        }
+      }
+    </style>
+  </head>
+  <body style="background-color: black">
+    <div class="d-flex justify-content-center" style="margin-top: 90px">
+      <div class="card" style="height: 410px; width: 800px">
+        <div
+          class="m-3 div_style"
+          style="border: 1px groove; width: 750px; height: 46px"
+        >
+          <div style="display: inline-block; padding-left: 10px">
+            <i class="fa fa-search"></i>
+          </div>
+          <div id="txt">
+            <input
+              type="text"
+              id="myInput"
+              onkeyup="filt();"
+              placeholder="Enter your City"
+            />
+          </div>
+        </div>
+        <div>
+          <hr style="height: 5px" />
+        </div>
+        <div style="text-align: center">
+          <span>Popular Cities</span>
+          <ul
+            class="m-3 div_style"
+            id="myUL"
+            style="
+              display: flex;
+              list-style: none;
+              justify-content: space-between;
+            "
+          >
+            <li>
+              <div>
+                <div>
+                  <img
+                    src="/Newfolder/mumbai.png"
+                    alt=""
+                    id="1"
+                    onclick="change(id);"
+                  />
+                </div>
+                <div><span name="Mumbai">Mumbai</span></div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div>
+                  <img src="/Newfolder/pune.png" alt="" id=2
+                  onclick="change(id);"">
+                </div>
+                <div><span>Pune</span></div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div>
+                  <img
+                    src="/Newfolder/ncr.webp"
+                    alt=""
+                    id="3"
+                    onclick="change(id);"
+                  />
+                </div>
+                <div><span>Delhi</span></div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div>
+                  <img src="/Newfolder/bang.png" id="4" onclick="change(id);" />
+                </div>
+                <div><span>Banglore</span></div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div>
+                  <img
+                    src="/Newfolder/chen.webp"
+                    id="5"
+                    onclick="change(id);"
+                  />
+                </div>
+                <div><span>Chennai</span></div>
+              </div>
+            </li>
+            <li>
+              <div>
+                <div>
+                  <img
+                    src="/Newfolder/kolk.webp"
+                    id="6"
+                    onclick="change(id);"
+                  />
+                </div>
+                <div><span>Kolkata</span></div>
+              </div>
+            </li>
+          </ul>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
+<!-- Modal -->
+<!-- <div
+ class="modal fade d-flex justify-content-center"
+ id="examplemodal"
+ tabindex="-1"
+ aria-hidden="true"
+ style="margin-top: 90px"
+>
+ <div class="modal-dialog">
+   <div class="modal-content card" style="height: 410px; width: 800px">
+     <div class="m-3 div_style" style="border: 1px groove; height: 46px">
+       <div style="display: inline-block; padding-left: 10px">
+         <i class="fa fa-search"></i>
+       </div>
+       <div id="txt">
+         <input
+           type="text"
+           id="myInput"
+           onkeyup="filt();"
+           placeholder="Enter your City"
+         />
+       </div>
+     </div>
+     <div>
+       <hr style="height: 5px" />
+     </div>
+     <div style="text-align: center">
+       <span>Popular Cities</span>
+       <ul
+         class="m-3 div_style"
+         id="myUL"
+         style="
+           display: flex;
+           list-style: none;
+           justify-content: space-between;
+         "
+       >
+         <li>
+           <div>
+             <div>
+               <img
+                 src="/Newfolder/mumbai.png"
+                 alt=""
+                 id="1"
+                 onclick="change(id);"
+               />
+             </div>
+             <div><span name="Mumbai">Mumbai</span></div>
+           </div>
+         </li>
+         <li>
+           <div>
+             <div>
+               <img src="/Newfolder/pune.png" alt="" id=2
+               onclick="change(id);"">
+             </div>
+             <div><span>Pune</span></div>
+           </div>
+         </li>
+         <li>
+           <div>
+             <div>
+               <img
+                 src="/Newfolder/ncr.webp"
+                 alt=""
+                 id="3"
+                 onclick="change(id);"
+               />
+             </div>
+             <div><span>Delhi</span></div>
+           </div>
+         </li>
+         <li>
+           <div>
+             <div>
+               <img
+                 src="/Newfolder/bang.png"
+                 id="4"
+                 onclick="change(id);"
+               />
+             </div>
+             <div><span>Banglore</span></div>
+           </div>
+         </li>
+         <li>
+           <div>
+             <div>
+               <img
+                 src="/Newfolder/chen.webp"
+                 id="5"
+                 onclick="change(id);"
+               />
+             </div>
+             <div><span>Chennai</span></div>
+           </div>
+         </li>
+         <li>
+           <div>
+             <div>
+               <img
+                 src="/Newfolder/kolk.webp"
+                 id="6"
+                 onclick="change(id);"
+               />
+             </div>
+             <div><span>Kolkata</span></div>
+           </div>
+         </li>
+       </ul>
+     </div>
+   </div>
+ </div>
+</div> -->

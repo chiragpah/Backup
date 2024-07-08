@@ -1,0 +1,32 @@
+"sports":[
+            {
+                "_sportName":"Cricket",
+                "_price":450,
+                "_sportImage":"/Asset/sports/fitnessmarathon.webp",
+                "_language":"Hindi",
+                "id":1
+            },
+            {
+                "_sportName":"Sudoku",
+                "_price":550,
+                "_sportImage":"/Asset/sports/sudoku.webp",
+                
+                "id":4
+            },
+            {
+                "_sportName":"Football",
+                "_price":420,
+                "_sportImage":"/Asset/sports/football.jfif",
+               
+                "id":2
+            },
+            {
+                "_sportName":"Badminton",
+                "_price":550,
+                "_sportImage":"/Asset/sports/badminton.jfif",
+                
+                "id":3
+            }
+    
+        ]
+    

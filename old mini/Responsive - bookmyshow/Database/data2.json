@@ -1,0 +1,458 @@
+{
+    "Movies": [
+        { 
+            "id": 10,
+            "movie_name": "Salaar:Cease Fire",
+            "category": "Action",
+            "year": "2023",
+            "Description": "Brace yourself for an extraordinary tale of rebellion filled with power-packed action.",
+            "Movie_image": "/Asset/Movies/salaar.webp",
+            "Cast": [
+                "Prabhas",
+                "Shruti Haasan",
+                "Prithviraj Sakumaran"
+            ],
+            "ArtistID": [
+                333,
+                334,
+                335
+            ],
+            "Cast_img": [
+                "/Asset/Images/prabhas-1708-1686915417.webp",
+                "/Asset/Images/shruti-haasan-29670-18-09-2017-05-02-43.webp",
+                "/Asset/Images/prithviraj-sukumaran-31501-16-09-2017-05-40-22.webp"
+            ],
+            "Duration": "2h 55min",
+            "review": "8",
+            "release": "25 December 2023"
+        },
+        {
+            "id": 11,
+            "movie_name": "Dunki",
+            "category": "Comedy",
+            "year": "2023",
+            "Description": "About the movie Four friends from a sleepy little village in Punjab share a common dream to go to England.Their problem is that they have neither the visa nor the ticket. A soldier alights from a train one day, and their lives change. He gives them a soldier`s promise: He will take them to the land of their dreams.What follows is a hilarious and heartwarming tale of a perilous journey through the desert and the sea, but most crucially through the hinterlands of their mind.A journey that tests and defines them: their courage, their smarts, and the strain of their conflicting ideologies.Dunki is a saga of friendships, borders, nostalgia for home and love that towers above it all",
+            "Movie_image": "/Asset/Images/Dunki.jpg",
+            "Cast": [
+                "Sharukh Khan",
+                "Taapsee Pannu",
+                "Boman Irani"
+            ],
+            "Cast_img": [
+                "/Asset/Images/shah-rukh-khan-2092-12-09-2017-02-10-43.webp",
+                "/Asset/Images/taapsee-pannu-20499-1702983209.webp",
+                "/Asset/Images/boman-irani-339-24-11-2017-07-48-52.webp"
+            ],
+            "ArtistID": [
+                330,
+                331,
+                332
+            ],
+            "Duration": "2h 41min",
+            "review": "8.5",
+            "release": "10 December 2023"
+        },
+        {
+            "id": 12,
+            "movie_name": "Animal",
+            "category": "Drama",
+            "year": "2023",
+            "Description": "About the movie This is the story of a son whose love for his father knows no bounds. As their bond begins to fracture, a chain of extraordinary events unfold causing the son to undergo a remarkable transformation consumed by a thirst for vengeance.",
+            "Movie_image": "../Asset/Movies/animal.webp",
+            "Cast": [
+                "Ranbir Kapoor",
+                "Anil Kapoor"
+            ],
+            "ArtistID": [
+                336,
+                337,
+                338
+            ],
+            "Cast_img": [],
+            "Duration": "3h 21min",
+            "review": "8.3",
+            "release": "20 December 2023"
+        },
+        {
+            "id": 13,
+            "movie_name": "Sam Bahadur",
+            "category": "Biography",
+            "year": "2023",
+            "Description": "About the movie Sam Bahadur is a tribute to Field Marshal Sam HFJ Manekshaw, MC, India`s first Field Marshal and a legendary Army General. His career witnessed the shaping of India`s geopolitical borders, and his life was marked by significant milestones, from fighting in World War II to being the Chief of Army Staff during the 1971 Indo-Pakistan war, that led to the creation of Bangladesh. This RSVP film explores his dynamic personality and his unparalleled military career, offering a glimpse into the life of a no-nonsense Army Commander, also known as `Sam Bahadur` by the soldiers he led",
+            "Movie_image": "/Asset/Movies/sambahadur.webp",
+            "Cast": [
+                "Vicky Kaushal",
+                "Fatima Sama Shaikh"
+            ],
+            "Cast_img": [],
+            "Duration": "2h 30m",
+            "review": "9",
+            "Trailer": ""
+        },
+        {
+            "id": 14,
+            "movie_name": "Aquaman",
+            "category": "Action",
+            "year": "2023",
+            "Description": "Brace yourself for an extraordinary tale of rebellion filled with power-packed action.",
+            "Movie_image": "/Asset/Movies/aquaman.webp",
+            "Cast": [
+                "Prabhas",
+                "Shruti Haasan",
+                "Prithviraj Sakumaran"
+            ],
+            "Cast_images": [],
+            "Duration": "2h 55min",
+            "review": "8",
+            "Trailer": ""
+        },
+        {
+            "id": 15,
+            "movie_name": "Migration",
+            "category": "Comedy",
+            "year": "2023",
+            "Description": "About the movie Four friends from a sleepy little village in Punjab share a common dream to go to England.Their problem is that they have neither the visa nor the ticket. A soldier alights from a train one day, and their lives change. He gives them a soldier`s promise: He will take them to the land of their dreams.What follows is a hilarious and heartwarming tale of a perilous journey through the desert and the sea, but most crucially through the hinterlands of their mind.A journey that tests and defines them: their courage, their smarts, and the strain of their conflicting ideologies.Dunki is a saga of friendships, borders, nostalgia for home and love that towers above it all",
+            "Movie_image": "/Asset/Movies/migration.webp",
+            "Cast": [
+                "Sharukh Khan",
+                "Taapsee Pannu",
+                "Boman Irani"
+            ],
+            "Cast_img": [],
+            "Duration": "2h 41min",
+            "review": "8.5",
+            "Trailer": ""
+        },
+        {
+            "id": 16,
+            "movie_name": "SatyaShodhak",
+            "category": "Drama",
+            "year": "2023",
+            "Description": "About the movie This is the story of a son whose love for his father knows no bounds. As their bond begins to fracture, a chain of extraordinary events unfold causing the son to undergo a remarkable transformation consumed by a thirst for vengeance.",
+            "Movie_image": "/Asset/Movies/satyashodhak.webp",
+            "Cast": [
+                "Ranbir Kapoor",
+                "Anil Kapoor"
+            ],
+            "Cast_img": [],
+            "Duration": "3h 21min",
+            "review": "8.3",
+            "Trailer": ""
+        },
+        {
+            "id": 17,
+            "movie_name": " Wonka",
+            "category": "Biography",
+            "year": "2023",
+            "Description": "About the movie Sam Bahadur is a tribute to Field Marshal Sam HFJ Manekshaw, MC, India`s first Field Marshal and a legendary Army General. His career witnessed the shaping of India`s geopolitical borders, and his life was marked by significant milestones, from fighting in World War II to being the Chief of Army Staff during the 1971 Indo-Pakistan war, that led to the creation of Bangladesh. This RSVP film explores his dynamic personality and his unparalleled military career, offering a glimpse into the life of a no-nonsense Army Commander, also known as `Sam Bahadur` by the soldiers he led",
+            "Movie_image": "/Asset/Movies/wonka.webp",
+            "Cast": [
+                "Vicky Kaushal",
+                "Fatima Sama Shaikh"
+            ],
+            "Cast_img": [],
+            "Duration": "2h 30m",
+            "review": "9",
+            "Trailer": ""
+        }
+    ],
+    "Events": [
+        {
+            "id": 100,
+            "EventName": "Haazari",
+            "AritistName": "Sonu Nigam",
+            "Category": "Concerts",
+            "Price": 700,
+            "EventImage": "/Asset/Artist_Images/sonunigam.jpg",
+            "EventDate": "Saturday,20 January 2023 ",
+            "EventDescription": "Sonu Nigam is performing live again in Mumbai for his most loving fans.Sonu Nigam is a playback singer, music composer, and actor who primarily works in the Hindi and Kannada film industries.",
+            "Duration": "2hr 55min",
+            "Location": "Shanmukhananda Hall",
+            "Language": "Hindi",
+            "ArtistImage": "/Asset/Artist_Images/sonunigam.jpg"
+        },
+        {
+            "id": 101,
+            "EventName": "Chaman Chatora",
+            "AritistName": "Gaurav Kapoor",
+            "Category": "Standup Comedy",
+            "Price": 400,
+            "EventImage": "/Asset/Artist_Images/gauravkapoor.jpg",
+            "EventDate": "Saturday,31 January 2024 ",
+            "EventDescription": "Come and enjoy the super relatable and super funny, Gaurav Kapoor in his live show. One of the funniest and most prolific stand-up acts in the country, Gaurav Kapoor`s Vlogs have created a fan base of their own. 1M+ on YouTube, 300K on Insta, an IMDB 8.2 rated special on Amazon Prime,",
+            "Duration": "1hr 00min",
+            "Location": "IT Park",
+            "Language": "Hindi",
+            "ArtistImage": ""
+        },
+        {
+            "id": 102,
+            "EventName": "ED SHEERAN:+-= Tour",
+            "AritistName": "Ed Sheeran",
+            "Category": "Concerts",
+            "Price": 8700,
+            "EventImage": "/Asset/Artist_Images/edsheeran.webp",
+            "EventDate": "Saturday,16 March 2024 ",
+            "EventDescription": "We’re ‘Thinking Out Loud’ here, but picture yourself at Ed Sheeran’s LIVE concert!",
+            "Duration": "3hr 00min",
+            "Location": "Mahalaxmi Race Course",
+            "Language": "English",
+            "ArtistImage": ""
+        },
+        {
+            "id": 103,
+            "EventName": "Kisi Ko Batana Mat",
+            "AritistName": "Anubhav Singh Bassi",
+            "Category": "Standup Comedy",
+            "Price": 490,
+            "EventImage": "/Asset/Artist_Images/anubhav.webp",
+            "EventDate": "Friday,05 January 2024 ",
+            "EventDescription": "After the great success of his previous show 'Bas kar bassi,' Anubhav Singh Bassi is coming back to perform live on stage. This time, he will bring a whole new set of funny stories and jokes that will keep you entertained. Get ready to enjoy an exciting and hilarious performance that will make you laugh uncontrollably and leave you in high spirits.",
+            "Duration": "1hr 30min",
+            "Location": "ShreeSai Hall",
+            "Language": "Hindi",
+            "ArtistImage": ""
+        },
+        {
+            "id": 104,
+            "EventName": "Zakir Khan Mann Pasand",
+            "AritistName": "Zakir Pasand",
+            "Category": "Standup Comedy",
+            "Price": 1000,
+            "EventImage": "/Asset/Artist_Images/zakir.jpg",
+            "EventDate": "Wednesday,10 January 2024 ",
+            "EventDescription": "Zakir Khan is an Indian comedian, poet and actor. In 2012, he rose to popularity by winning Comedy Central. Khan has also been a part of a news comedy show",
+            "Duration": "1hr 30min",
+            "Location": "Mahalaximi Hall",
+            "Language": "Hindi",
+            "ArtistImage": ""
+        },
+        {
+            "id": 105,
+            "EventName": "Pt.Ajoy and Ustad Zakir",
+            "AritistName": "Ustad Zakir Hussain",
+            "Category": "Classical, Indian Classical",
+            "Price": 600,
+            "EventImage": "/Asset/Artist_Images/Pandit.jpg",
+            "EventDate": "Friday,12 January 2024 ",
+            "EventDescription": "After the great success of his previous show 'Bas kar bassi,' Anubhav Singh Bassi is coming back to perform live on stage. This time, he will bring a whole new set of funny stories and jokes that will keep you entertained. Get ready to enjoy an exciting and hilarious performance that will make you laugh uncontrollably and leave you in high spirits.",
+            "Duration": "1hr 30min",
+            "Location": "Ganesh Hall",
+            "Language": "Hindi",
+            "ArtistImage": ""
+        },
+        {
+            "id": 106,
+            "EventName": "KalaaStar",
+            "AritistName": "Yo Yo Honey Singh",
+            "Category": "Musice",
+            "Price": 1500,
+            "EventImage": "/Asset/Artist_Images/Honey-Singh-2.jpg",
+            "EventDate": "Wednesday,24 January 2024 ",
+            "EventDescription": "After the great success of his previous show 'Bas kar bassi,' Anubhav Singh Bassi is coming back to perform live on stage. This time, he will bring a whole new set of funny stories and jokes that will keep you entertained. Get ready to enjoy an exciting and hilarious performance that will make you laugh uncontrollably and leave you in high spirits.",
+            "Duration": "1hr 30min",
+            "Location": "Mahalaximi Hall",
+            "Language": "Hindi",
+            "ArtistImage": ""
+        },
+        {
+            "id": 107,
+            "EventName": "3:59 AM",
+            "AritistName": "DIVINE",
+            "Category": "Music",
+            "Price": 1000,
+            "EventImage": "/Asset/Artist_Images/DIVINE.jpg",
+            "EventDate": "Friday,05 January 2024 ",
+            "EventDescription": "After the great success of his previous show 'Bas kar bassi,' Anubhav Singh Bassi is coming back to perform live on stage. This time, he will bring a whole new set of funny stories and jokes that will keep you entertained. Get ready to enjoy an exciting and hilarious performance that will make you laugh uncontrollably and leave you in high spirits.",
+            "Duration": "1hr 30min",
+            "Location": "ShreeSai Hall",
+            "Language": "Hindi",
+            "ArtistImage": ""
+        }
+    ],
+    "feedbacks": [
+        {
+            "_name": "Sunita Verma",
+            "_email": "sunitav@gmail.com",
+            "_productDescription": "Frankly speaking, this website is easy to handle, more easily understandable. As we always say it is basically user friendly. Thank you.",
+            "id": 1
+        },
+        {
+            "_name": "Anant Wagh",
+            "_email": "anantw@gmail.com",
+            "_productDescription": "Overall, all the funtionality works as expected. It is responsive and easy to use. Talking about view of page, its looking nice. Thank you.",
+            "id": 2
+        }
+    ],
+    "UserInfo": [
+        {
+            "_userId": "Chirag@123",
+            "_userFullName": "CHirag",
+            "_userPassword": "Chirag@12",
+            "_userFavArtist": "Salman",
+            "_userFavCategory": "Action",
+            "_userContact": "9518743461",
+            "id": 1
+        },
+        {
+            "_userId": "Chirag@gmail.comC",
+            "_userFullName": "Chirag",
+            "_userPassword": "Chirag@12",
+            "_userFavArtist": "Sharukh Khan",
+            "_userFavCategory": "Action",
+            "_userContact": "9518743461",
+            "id": 2
+        },
+        {
+            "_userId": "Amit@gmail.com",
+            "_userFullName": "Amit",
+            "_userPassword": "Amit@123",
+            "_userFavArtist": "Prabhas",
+            "_userFavCategory": "Action",
+            "_userContact": "8987433747",
+            "id": 3
+        }
+    ],
+    "Artists": [
+        {
+            "Artistid": 330,
+            "Mid": 10,
+            "ArtistName": "Sharukh Khan",
+            "ArtistImage": "../Asset/Images/shah-rukh-khan-2092-12-09-2017-02-10-43.webp",
+            "ArtistData": "Hailed as the world`s biggest superstar and the King of Bollywood, Shah Rukh Khan is a phenomenon like no other. From his humble beginnings as an outsider in a largely dynastic Hindi cinema to earning the numero uno position in the industry, his rise might seem like a fairytale; but is in fact a testament to the actor`s sheer talent, infectious energy and hard work. ",
+            "ArtistDob": "November 2,1965",
+            "BirthPlace": "New Delhi, Delhi, India",
+            "Occupation": "Actor Producer  Special Appearances  Voice Cast",
+            "ArtistData2": "Born on the 2nd of November, 1965 in New Delhi, Khan spent the first five years of his life with his maternal grandfather in Mangalore. He then moved back to New Delhi, where his family lived in rented apartments. Khan then joined St. Colombia`s School in New Delhi, where he excelled in both studies and sports such as football and hockey. He was also the recipient of his school`s highest award, the Sword of Honor."
+        },
+        {
+            "Artistid": 331,
+            "Mid": 11,
+            "ArtistName": "Taapsee Pannu",
+            "ArtistImage": "/ArtistImages/taapsee-pannu-20499-1702983209.webp",
+            "ArtistData": "Hailed as the world`s biggest superstar and the King of Bollywood, Shah Rukh Khan is a phenomenon like no other. From his humble beginnings as an outsider in a largely dynastic Hindi cinema to earning the numero uno position in the industry, his rise might seem like a fairytale; but is in fact a testament to the actor`s sheer talent, infectious energy and hard work. ",
+            "ArtistDob": "November 2,1965",
+            "BirthPlace": "New Delhi, Delhi, India",
+            "Occupation": "Actor Producer  Special Appearances  Voice Cast",
+            "ArtistData2": "Born on the 2nd of November, 1965 in New Delhi, Khan spent the first five years of his life with his maternal grandfather in Mangalore. He then moved back to New Delhi, where his family lived in rented apartments. Khan then joined St. Colombia`s School in New Delhi, where he excelled in both studies and sports such as football and hockey. He was also the recipient of his school`s highest award, the Sword of Honor."
+        },
+        {
+            "Artistid": 333,
+            "Mid": 11,
+            "ArtistName": "Prabhas",
+            "ArtistImage": "../Asset/Images/prabhas-1708-1686915417.webp",
+            "ArtistData": "Hailed as the world`s biggest superstar and the King of Bollywood, Shah Rukh Khan is a phenomenon like no other. From his humble beginnings as an outsider in a largely dynastic Hindi cinema to earning the numero uno position in the industry, his rise might seem like a fairytale; but is in fact a testament to the actor`s sheer talent, infectious energy and hard work. ",
+            "ArtistDob": "November 2,1965",
+            "BirthPlace": "New Delhi, Delhi, India",
+            "Occupation": "Actor Producer  Special Appearances  Voice Cast",
+            "ArtistData2": "Born on the 2nd of November, 1965 in New Delhi, Khan spent the first five years of his life with his maternal grandfather in Mangalore. He then moved back to New Delhi, where his family lived in rented apartments. Khan then joined St. Colombia`s School in New Delhi, where he excelled in both studies and sports such as football and hockey. He was also the recipient of his school`s highest award, the Sword of Honor."
+        }
+    ],
+    "Theater": [
+        {
+            "LocId": 1010,
+            "TheaterId": 51,
+            "TheaterName": "Phoenix Market City",
+            "ScheduleManagement": {
+                "mid": 10,
+                "time": [
+                    "03.00 PM",
+                    "06.00 PM",
+                    "09.00 PM"
+                ]
+            }
+        },
+        {
+            "LocId": 1010,
+            "TheaterId": 52,
+            "TheaterName": "PVR Cinemas",
+            "ScheduleManagement": {
+                "mid": 10,
+                "time": [
+                    "03.00 PM",
+                    "06.00 PM",
+                    "09.00 PM"
+                ]
+            }
+        },
+        {
+            "LocId": 1010,
+            "TheaterId": 53,
+            "TheaterName": "INOX",
+            "ScheduleManagement": {
+                "mid": 10,
+                "time": [
+                    "03.00 PM",
+                    "06.00 PM",
+                    "09.00 PM"
+                ]
+            }
+        },
+        {
+            "LocId": 1010,
+            "TheaterId": 54,
+            "TheaterName": "Abhiruchi Cinema HAll",
+            "ScheduleManagement": {
+                "mid": 10,
+                "time": [
+                    "03.00 PM",
+                    "06.00 PM",
+                    "09.00 PM"
+                ]
+            }
+        },
+        {
+            "LocId": 1009,
+            "TheaterId": 55,
+            "TheaterName": "Cinepolis Theater",
+            "ScheduleManagement": {
+                "mid": 10,
+                "time": [
+                    "03.00 PM",
+                    "06.00 PM",
+                    "09.00 PM"
+                ]
+            }
+        },
+        {
+            "LocId": 1009,
+            "TheaterId": 56,
+            "TheaterName": "Tata Cinema",
+            "ScheduleManagement": {
+                "mid": 10,
+                "time": [
+                    "03.00 PM",
+                    "06.00 PM",
+                    "09.00 PM"
+                ]
+            }
+        }
+    ],
+    "sports": [
+        {
+            "_sportName": "Cricket",
+            "_price": 450,
+            "_sportImage": "/Asset/sports/fitnessmarathon.webp",
+            "_language": "Hindi",
+            "id": 1
+        },
+        {
+            "_sportName": "Sudoku",
+            "_price": 550,
+            "_sportImage": "/Asset/sports/sudoku.webp",
+            "id": 4
+        },
+        {
+            "_sportName": "Football",
+            "_price": 420,
+            "_sportImage": "/Asset/sports/football.jfif",
+            "id": 2
+        },
+        {
+            "_sportName": "Badminton",
+            "_price": 550,
+            "_sportImage": "/Asset/sports/badminton.jfif",
+            "id": 3
+        }
+    ]
+}

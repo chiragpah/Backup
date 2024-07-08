@@ -1,0 +1,49 @@
+* {
+    font-family: 'Times new Roman', 'Sans-serif';
+}
+
+.card-holder {
+    width: 80%;
+    margin-bottom: 3%;
+    margin-left: 10%;
+    margin-right: 10%;
+    box-shadow: 3px 14px 30px rgb(255, 255, 255), 0 15px 12px rgba(0, 0, 0, 0.22);
+    display: flex;
+    background: rgb(255, 255, 255);
+    overflow: hidden;
+}
+
+.grid-container {
+    display: grid;
+    grid-template-columns: repeat(4, 1fr);
+    /* Four columns */
+    gap: 4%;
+    padding: 20px;
+    overflow-x: auto;
+}
+
+.grid-item {
+    border-radius: 10px;
+    overflow: hidden;
+    width: 100%;
+    height: 95%;
+    transition: transform 0.3s ease-in-out;
+    margin-bottom: 20px;
+}
+
+.grid-item:hover {
+    transform: scale(1.05);
+    box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.img {
+    height: 340px;
+    width: 100%;
+}
+
+.main-content {
+    background-color: black;
+    height: 55px;
+    text-align: center;
+    color: white;
+}

@@ -1,0 +1,360 @@
+.card_info {
+  text-align: center;
+  margin: auto;
+}
+
+.card_1 {
+  height: 500px;
+  margin: 0 10px;
+  width: 50%;
+  border: 2px solid beige;
+}
+
+.header {
+  width: 100;
+  display: flex;
+  text-align: center;
+}
+
+.main-content {
+  margin: 10px 10px;
+}
+
+.card-holder {
+  width: 100vw;
+  margin: 50px 10px;
+  /* height: 100vh; */
+  display: flex;
+  flex-wrap: wrap;
+}
+
+.movie-cards {
+  display: flex;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 100;
+  font-size: 15px;
+  text-align: center;
+}
+
+.btns {
+  background-color: rgb(91, 91, 146);
+  border-radius: 5px;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+.card_1 img {
+  height: 35%;
+  width: 100%;
+
+}
+
+/* .grid-container{
+        display: flex;
+    } */
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  /* background-color: #2196F3; */
+  padding: 10px;
+  margin: auto;
+}
+
+.movie-title {
+  text-align: center;
+  width: 1113px;
+  height: 150px;
+  margin-top: auto;
+  font-weight: bolder;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-size: 20px;
+  text-align: center;
+  width: 250px;
+  height: 550px;
+
+}
+
+.text-muted {
+  opacity: 0.8;
+  color: black;
+}
+
+.d-flex {
+  width: 40%;
+}
+
+.col,
+.card {
+  height: 350px;
+}
+
+.card {
+  margin-left: 1px;
+  border: 2px solid black;
+  /* margin-left: 15px; */
+  margin-right: 15px;
+}
+
+.card-img-top {
+  height: 300px;
+}
+
+#card-footer {
+  background-color: black;
+  height: 50px;
+}
+
+.container-fluid {
+  background-color: black;
+  height: 80px;
+  text-transform: capitalize;
+}
+
+#nav-link {
+  color: crimson;
+}
+
+#carouselExampleControls {
+  background-color: black;
+}
+
+.area2 {
+  position: relative;
+}
+
+.events,
+.movies {
+  color: black;
+  text-align: center;
+  text-transform: capitalize;
+  height: 60px;
+  background-color: black;
+}
+
+.card,
+.card-img-top:hover {
+  height: 350px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*# sourceMappingURL=visit.css.map */
+
+
+/* filtercss styling */
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+}
+
+h1 {
+  text-align: center;
+}
+
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-buttons button {
+  margin: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+
+
+/* other styling */
+
+* {
+  font-family: 'Times new Roman', 'Sans-serif';
+}
+
+.card_1 {
+  height: 500px;
+  margin: 0 10px;
+  width: 50%;
+  border: 2px solid beige;
+}
+
+.card_1 img {
+  height: 85%;
+  width: 100%;
+
+}
+
+.header {
+  width: 100;
+  display: flex;
+  text-align: center;
+}
+
+.main-content {
+  margin: 10px 10px;
+}
+
+.card-holder {
+  width: 100%;
+  margin: 0px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background: whitesmoke;
+}
+
+.movie-cards {
+  display: flex;
+  background-color: lightgray;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 100;
+  font-size: 15px;
+  text-align: center;
+}
+
+.btns {
+  background-color: rgb(91, 91, 146);
+  border-radius: 5px;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+  margin: auto;
+  overflow: scroll;
+  /* background: linear-gradient(black,gray); */
+}
+
+.grid-container1 {
+  display: grid;
+  width: auto;
+  height: auto;
+  border: 2px solid crimson;
+}
+
+.title {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-size: 10px;
+  color: black;
+  text-align: center;
+  width: 192px;
+  height: 351px;
+  /* height: auto;
+      width: auto; */
+  border-radius: 5px;
+  justify-content: space-between;
+
+}
+
+.grid-item:hover {
+  box-shadow: 5px 5px gray;
+}
+
+
+/* Add this style for user feedback display */
+
+
+/* .grid-item-f{
+  height: 200px;
+  width: 300px; 
+  background-color: antiquewhite;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 15px;
+  display: inline-block;
+} */
+
+
+
+/* Style for the movie card */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.main-content {
+  padding: 10px;
+}
+
+.card-text {
+  margin: 0;
+}
+
+.content h3 {
+  margin: 0;
+  color: #333;
+}
+
+.sport-title {
+
+  text-align: center;
+  width: 850px;
+  height: 70px;
+  margin-top: 15px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 10px;
+
+}

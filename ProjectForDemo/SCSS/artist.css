@@ -1,0 +1,66 @@
+.header {
+    height: 70px;
+}
+
+#navbar_size {
+    padding: 5px;
+    background-color: black !important;
+
+}
+
+.artist_image {
+    display: flex;
+    flex-direction: column;
+    align-items: center;
+    width: 50%;
+
+    h3 {
+        color: black;
+    }
+}
+
+
+
+#img {
+    width: 140px !important;
+    border-radius: 0% !important;
+    margin: 0px !important;
+
+}
+
+@media screen and (max-width: 716px) {
+    table {
+        margin-left: 10%;
+        font-size: 12px;
+        margin-right: 10%;
+        width: 80%;
+
+    }
+
+    td,
+    th {
+        padding: 10px;
+        /* Decrease padding for smaller screens */
+    }
+
+
+    .artist_image {
+        display: flex;
+        flex-direction: column;
+        align-items: center;
+        width: 25%;
+
+        h3 {
+            color: black;
+        }
+    }
+
+
+
+    #img {
+        width: 70px !important;
+        border-radius: 0% !important;
+        margin: 0px !important;
+
+    }
+}

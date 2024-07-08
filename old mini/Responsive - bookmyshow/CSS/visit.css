@@ -1,0 +1,290 @@
+#abc, #visitEvents {
+  display: flex;
+  justify-content: space-between;
+  flex-wrap: wrap;
+  align-items: center;
+  background-color: grey;
+}
+
+#card-footer {
+  background-color: pink;
+  height: 50px;
+  text-align: center;
+  text-transform: capitalize;
+  opacity: 1;
+  font-weight: bold;
+}
+
+#center2 {
+  width: 100%;
+}
+
+.navbar {
+  background-color: burlywood;
+}
+
+#city {
+  color: black;
+  font-size: large;
+  font-weight: bold;
+}
+
+#signin {
+  height: 40px;
+  width: 120px;
+  font-style: normal;
+  color: black;
+  border: 1px solid crimson;
+}
+
+#signin:hover {
+  height: 42px;
+  width: 125px;
+}
+
+* {
+  background-attachment: fixed;
+  background-size: cover;
+}
+
+#carouselExampleControls, .carousel-inner {
+  border-radius: 15px;
+  border: 0.5px solid black;
+}
+
+.text-muted {
+  opacity: 1;
+  font-weight: bold;
+  color: black;
+}
+
+.d-flex {
+  width: 40%;
+}
+
+.col, .card {
+  height: 350px;
+}
+
+.card {
+  border: 2px solid black;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.card-img-top {
+  height: 300px;
+}
+
+#nav-link {
+  color: crimson;
+}
+
+#carouselExampleControls {
+  background-color: black;
+  margin-left: 3px;
+}
+
+.area2 {
+  position: relative;
+}
+
+.events, .movies {
+  color: black;
+  text-align: center;
+  text-transform: capitalize;
+  height: 60px;
+  background-color: gray;
+}
+
+#center1, #center2, #center3 {
+  background-color: gray;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+  background-color: rgb(16, 14, 30);
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-section h2 {
+  color: #f1f1ee;
+  font-size: 1.5em;
+}
+
+.footer-section p {
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-section .fab {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.footer-section .social-icons {
+  display: flex;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #555;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .footer-section {
+    flex: 1 0 100%;
+    margin: 20px 0;
+  }
+  .quick-links, .about-us, .contact, .social {
+    text-align: center;
+  }
+  .icons {
+    justify-content: center;
+  }
+}
+@media screen and (max-width: 299px) {
+  #img {
+    height: 20px;
+  }
+  #location, #city {
+    display: none;
+  }
+  #nav2 {
+    background-color: goldenrod;
+    border: 2px solid blueviolet;
+  }
+  .d-flex {
+    width: 100%;
+  }
+  #center1, #center3, .movies {
+    background-color: blueviolet;
+  }
+  #center2, .events {
+    background-color: royalblue;
+  }
+  .carousel-inner {
+    width: -moz-min-content;
+    width: min-content;
+  }
+  .card {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+  #toggle {
+    border: 1px solid wheat;
+    font-weight: bolder;
+  }
+  #toggle:hover {
+    border: 3px solid brown;
+  }
+}
+@media screen and (max-width: 768px) {
+  #img {
+    width: 40%;
+  }
+  #city {
+    font-size: 30px;
+  }
+  #toggle {
+    border: 1px solid wheat;
+    font-weight: bolder;
+  }
+  #toggle:hover {
+    border: 3px solid brown;
+  }
+  #nav2 {
+    background-color: goldenrod;
+    border: 2px solid blueviolet;
+  }
+  .d-flex {
+    width: 100%;
+  }
+  #center1, #center3, .movies {
+    background-color: blueviolet;
+  }
+  #center2, .events {
+    background-color: royalblue;
+  }
+  .carousel-inner {
+    width: -moz-min-content;
+    width: min-content;
+  }
+  .card {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .navbar {
+    background-color: black;
+  }
+  #city {
+    color: wheat;
+  }
+  #img {
+    width: 60%;
+  }
+  #toggle {
+    border: 1px solid wheat;
+    font-weight: bolder;
+  }
+  #toggle:hover {
+    border: 3px solid brown;
+  }
+  #nav2 {
+    background-color: goldenrod;
+    border: 2px solid blueviolet;
+  }
+  .d-flex {
+    width: 100%;
+  }
+  #center1, #center3, .movies {
+    background-color: blueviolet;
+  }
+  #center2, .events {
+    background-color: royalblue;
+  }
+  .carousel-inner {
+    width: -moz-min-content;
+    width: min-content;
+  }
+  .card {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}/*# sourceMappingURL=visit.css.map */

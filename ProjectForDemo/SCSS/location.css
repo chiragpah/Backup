@@ -1,0 +1,30 @@
+.cities_container {
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+}
+
+.city {
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+    margin: 2rem 1rem;
+}
+
+li {
+    list-style: none;
+}
+
+
+.hidden_search_field {
+    width: 100%;
+    height: 30px;
+    padding: 5px 15px;
+    font-size: small;
+    border: none;
+    border-radius: 5px;
+    outline: 0;
+    margin: 0 10px;
+    box-shadow: rgba(0, 0, 0, 0.16) 0px 1px 4px;
+}

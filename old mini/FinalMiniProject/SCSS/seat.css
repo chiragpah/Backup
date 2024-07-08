@@ -1,0 +1,109 @@
+body {
+    margin: 60px;
+    padding: 0;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+    height: 100vh;
+    background: #111;
+    color: #fff;
+    font-family: 'Arial', sans-serif;
+}
+
+.theatre {
+    display: flex;
+    position: absolute;
+    top: 75%;
+    left: 45%;
+    transform: translate(-50%, -50%);
+}
+
+.cinema-seats {
+    display: flex;
+
+    .seat {
+        cursor: pointer;
+
+
+    }
+}
+
+
+.left {
+
+    .cinema-row {
+        transform: skew(-15deg);
+        margin: 0 6px;
+    }
+
+    .seat {
+        width: 100px;
+        padding: 50%;
+        height: 100px;
+        border-radius: 7px;
+        background: linear-gradient(to top, #761818, #761818, #761818, #761818, #761818, #B54041, #F3686A);
+        margin-bottom: 10px;
+        transform: skew(20deg);
+        margin-top: -32px;
+        box-shadow: 0 0 5px rgba(0, 0, 0, 0.5)
+    }
+
+    .seat.selected {
+        background: linear-gradient(to top, #184f76, #184f76, #184f76, #184f76, #184f76, #184f76, #184f76);
+        ;
+        color: #fff;
+    }
+
+    .row-2 {
+        transform: skew(-13deg);
+
+        .seat {
+            transform: skew(18deg);
+        }
+    }
+
+    .row-3 {
+
+        transform: skew(-12deg);
+
+        .seat {
+            transform: skew(16deg);
+        }
+    }
+
+
+}
+
+
+
+
+
+
+.blocked {
+    width: 100px;
+    padding: 50%;
+    height: 100px;
+    border-radius: 7px;
+    /* background: linear-gradient(to top, #761818, #761818, #761818, #761818, #761818, #B54041, #F3686A); */
+    margin-bottom: 10px;
+    transform: skew(20deg);
+    margin-top: -32px;
+    box-shadow: 0 0 5px rgba(0, 0, 0, 0.5);
+    background: linear-gradient(to top, #3f4041, #3f4041, #3f4041, #3f4041, #3f4041, #3f4041, #3f4041);
+}
+
+img {
+    position: absolute;
+    top: 15%;
+    left: 43%;
+}
+
+@media (max-width: 768px) {
+    .theatre {
+        flex-direction: column;
+    }
+
+    .right {
+        margin-left: 0;
+    }
+}

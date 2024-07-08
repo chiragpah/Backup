@@ -1,0 +1,175 @@
+// #carouselExampleControls , .carousel-inner{
+//     height: 300px;
+//     border-radius: 15px;
+//     border: 1px solid black;
+// }
+.text-muted {
+  opacity: 0.8;
+  color: black;
+}
+
+.header {
+  display: flex;
+}
+
+.d-flex {
+  width: 40%;
+}
+
+.col,
+.card {
+  height: 350px;
+}
+
+.card {
+  margin-left: 1px;
+  border: 2px solid black;
+  margin-left: 15px;
+  margin-right: 15px;
+}
+
+.card-img-top {
+  height: 300px;
+}
+
+#card-footer {
+  background-color: black;
+  height: 50px;
+}
+
+.container-fluid {
+  background-color: black;
+  height: 80px;
+  text-transform: capitalize;
+}
+
+#nav-link {
+  color: crimson;
+}
+
+#carouselExampleControls {
+  background-color: black;
+}
+
+.area2 {
+  position: relative;
+}
+
+.events,
+.movies {
+  color: black;
+  text-align: center;
+  text-transform: capitalize;
+  height: 60px;
+  background-color: black;
+}
+
+.card,
+.card-img-top:hover {
+  height: 350px;
+}
+
+/* .body{
+    margin: 0;
+    padding: 0;
+    box-sizing: border-box;
+}
+#logo{
+    color:red
+}
+.home_srch1{
+    border-color:black ;
+    width: 95vh;
+}
+.nav_1{
+    margin-left: 40px;
+}
+.nav_2{
+    margin-left: 70px;
+}
+@media screen and(min-width:700px) {
+    .home_srch1{
+        width: 30%;
+    } */
+body {
+  margin: 0;
+  padding: 0;
+  font-family: 'Segoe UI', Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+  background-color: rgb(16, 14, 30, 1);
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-section h2 {
+  color: #f1f1ee;
+  font-size: 1.5em;
+}
+
+.footer-section p {
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-section .fab {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.footer-section .social-icons {
+  display: flex;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #555;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .footer-section {
+    flex: 1 0 100%;
+    margin: 20px 0;
+  }
+
+  .quick-links,
+  .about-us,
+  .contact,
+  .social {
+    text-align: center;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+
+}

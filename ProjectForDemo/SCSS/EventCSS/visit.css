@@ -1,0 +1,105 @@
+.txt-muted {
+  color: grey;
+  font-size: 12px;
+}
+
+
+
+.header {
+  display: flex;
+}
+
+.d-flex {
+  width: 40%;
+}
+
+.col,
+.card {
+  height: 350px;
+}
+
+.card {
+
+  height: 350px;
+  transition: all 0.2s ease-in-out;
+
+  border: 2px solid black;
+  margin-left: 15px;
+  margin-right: 15px;
+  cursor: pointer;
+}
+
+.card-img-top {
+  height: 300px;
+}
+
+#card-footer {
+  background-color: black;
+  height: 50px;
+}
+
+.container-fluid {
+  background-color: (249, 180, 155);
+  /* opacity: ; */
+  height: 80px;
+  text-transform: capitalize;
+}
+
+#nav-link {
+  color: crimson;
+}
+
+#carouselExampleControls {
+  background-color: black;
+}
+
+.area2 {
+  position: relative;
+}
+
+.events,
+.movies {
+  color: black;
+  text-align: center;
+  text-transform: capitalize;
+  height: 60px;
+  background-color: gray;
+}
+
+
+
+.card:hover {
+  transform: translateY(10px);
+}
+
+.title-container {
+  display: flex;
+  align-content: center;
+  justify-content: space-between;
+  padding-left: 20px;
+  padding-right: 20px;
+}
+
+.title-container a {
+  color: black;
+  font-size: 17px;
+  text-decoration: none;
+  transition: all 0.1s ease-in-out;
+}
+
+.title-container a:hover {
+  color: #dee2e6;
+}
+
+.mt-100 {
+  margin-top: 100px;
+}
+
+body {
+
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+/*# sourceMappingURL=visit.css.map */

@@ -1,0 +1,104 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <link rel="stylesheet" href="/CSS/style.css">
+    <script src="/JS/plugins/all_cdn.js"></script>
+    <script src="/JS/model/billing.js"></script>
+</head>
+
+<body>
+    <div class="main-box">
+        <div class="food-section">
+            <br>
+            <div class="row row-cols-1 row-cols-md-2 g-4" id="foodnbill">
+            </div>
+        </div> <!--Food section ends here-->
+
+        <div class="bill-section">
+            <div class="bill-box">
+                <h1 style="text-align: center;color: darkcyan;">RECIEPT</h1>
+                <br>
+
+                <div class="movie-container">
+                    <p></p>
+                    <!-- <p>Select Menu</p>
+                    <select id="movieSelect">
+                        <option value="menu-one">Burger</option>
+                        <option value="menu-two">Popcorn & Softdrinks</option>
+                        <option value="menu-three">Light Snacks</option>
+                        <option value="menu-four">Popcorns & Beverages</option>
+                    </select>
+                    <p>Number of tickets: </p>
+                    <input type="number" id="ticketCount" value="1">
+                    <button onclick="addBill()">Add Bill</button>
+                </div>
+
+                <div class="receipt-container">
+                    <h2>Receipts</h2>
+                    <ul id="receiptList"></ul>
+                </div>
+                <p>Recipient's Name: </p>
+                <p>Booking: </p>
+                <p>Booking Price:</p>
+                <p>Food Coupons Added :</p>
+                <p>Total Amount: </p>
+
+            </div>
+        </div> -->
+
+
+
+
+
+
+
+
+        <h2>Receipt and Ticket Example</h2>
+
+        <button onclick="generateReceipt()">Generate Receipt</button>
+        <div id="receiptNumber"></div>
+    
+        <br>
+    <!--  -->
+        <label for="ticketQuantity">Number of Tickets:</label>
+        <input type="number" id="ticketQuantity" min="1" value="1">
+        <button onclick="generateTickets()">Generate Tickets</button>
+        <ul id="ticketList"></ul>
+        
+            <h2>Count Checked Checkboxes</h2>
+        
+            <label for="checkbox1">Checkbox 1</label>
+            <input type="checkbox" id="checkbox1" class="checkbox">
+            
+            <label for="checkbox2">Checkbox 2</label>
+            <input type="checkbox" id="checkbox2" class="checkbox">
+        
+            <label for="checkbox3">Checkbox 3</label>
+            <input type="checkbox" id="checkbox3" class="checkbox">
+        
+            <button onclick="countCheckedCheckboxes()">Count Checked Checkboxes</button>
+            
+            <p id="result">Result will be displayed here.</p>
+            <p id="total">Total Bill: </p>
+        
+            <script src="/JS/controller/final_controller.js"></script>
+            <script src="/JS/controller//billingsection_controller.js"></script>
+
+
+
+
+        </div>
+
+    </div>
+    </div>
+
+
+    <script src="/JS/controller/Foodcoupons_controller.js" type="module"></script>
+</body>
+
+</html>
+<!-- In Working -->

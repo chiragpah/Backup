@@ -1,0 +1,498 @@
+* {
+  font-family: 'Times new Roman', 'Sans-serif';
+}
+
+.card_1 {
+  height: 500px;
+  margin: 0 10px;
+  width: 50%;
+  border: 2px solid beige;
+}
+
+.card_1 img {
+  height: 85%;
+  width: 100%;
+
+}
+
+.header {
+  width: 100;
+  display: flex;
+  text-align: center;
+}
+
+.main-content {
+  margin: 10px 10px;
+}
+
+.card-holder {
+  width: 100vw;
+  margin: 0px;
+  height: auto;
+  display: flex;
+  flex-wrap: wrap;
+  background: linear-gradient(black, gray);
+}
+
+.movie-cards {
+  display: flex;
+  background-color: lightgray;
+}
+
+.button {
+  display: flex;
+  justify-content: center;
+}
+
+.content {
+  width: 100;
+  font-size: 15px;
+  text-align: center;
+}
+
+.btns {
+  background-color: rgb(91, 91, 146);
+  border-radius: 5px;
+  border: 2px solid black;
+  margin: 10px;
+}
+
+.grid-container {
+  display: grid;
+  grid-template-columns: auto auto auto auto;
+  grid-gap: 10px;
+  padding: 10px;
+  margin: auto;
+  /* background: linear-gradient(black,gray); */
+}
+
+.grid-container2 {}
+
+.movie-title {
+  text-align: center;
+  width: 850px;
+  height: 70px;
+  margin-top: 15px;
+  font-weight: bold;
+  margin-left: auto;
+  margin-right: auto;
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 10px;
+}
+
+.title {
+  text-align: center;
+  margin-top: 15px;
+}
+
+.grid-item {
+  background-color: rgba(255, 255, 255, 0.8);
+  border: 1px solid rgba(0, 0, 0, 0.8);
+  padding: 5px;
+  font-size: 10px;
+  color: black;
+  text-align: center;
+  width: 192px;
+  height: 451px;
+  /* height: auto;
+      width: auto; */
+  border-radius: 5px;
+  justify-content: space-between;
+
+}
+
+.grid-item:hover {
+  box-shadow: 5px 5px gray;
+}
+
+.text-muted {
+  opacity: 0.8;
+  color: black;
+}
+
+.d-flex {
+  width: 40%;
+}
+
+.col,
+.card {
+  height: 350px;
+}
+
+.card-img-top {
+  height: 300px;
+}
+.card-img{
+  height: 350px;
+  width: 319px;
+}
+
+#card-footer {
+  background-color: black;
+  height: 50px;
+}
+
+.container-fluid {
+  background-color: black;
+  height: 80px;
+  text-transform: capitalize;
+}
+
+#nav-link {
+  color: crimson;
+}
+
+#carouselExampleControls {
+  background-color: black;
+}
+
+.area2 {
+  position: relative;
+}
+
+.events,
+.movies {
+  color: black;
+  text-align: center;
+  text-transform: capitalize;
+  height: 60px;
+  background-color: gray;
+}
+
+.card,
+.card-img-top:hover {
+  height: 350px;
+}
+
+body {
+  margin: 0;
+  padding: 0;
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+footer {
+  background-color: #333;
+  color: #fff;
+  padding: 40px 0;
+}
+
+.footer-container {
+  display: flex;
+  flex-wrap: wrap;
+  justify-content: space-around;
+}
+
+.footer-section {
+  flex: 1;
+  margin: 0 20px;
+}
+
+.footer-section h2 {
+  color: #f1f1ee;
+  font-size: 1.5em;
+}
+
+.footer-section p {
+  line-height: 1.6;
+  color: #ddd;
+}
+
+.footer-section ul {
+  list-style: none;
+  padding: 0;
+}
+
+.footer-section a {
+  color: #fff;
+  text-decoration: none;
+}
+
+.footer-section a:hover {
+  text-decoration: underline;
+}
+
+.footer-section .fab {
+  color: #fff;
+  font-size: 24px;
+  margin-right: 10px;
+}
+
+.footer-section .social-icons {
+  display: flex;
+}
+
+.footer-bottom {
+  text-align: center;
+  padding-top: 20px;
+  border-top: 1px solid #555;
+}
+
+/* Responsive styles */
+@media only screen and (max-width: 768px) {
+  .footer-section {
+    flex: 1 0 100%;
+    margin-bottom: 0px;
+  }
+
+  .quick-links,
+  .about-us,
+  .contact,
+  .social {
+    text-align: center;
+  }
+
+  .icons {
+    justify-content: center;
+  }
+
+  .grid-container {
+    width: 100%;
+    display: block;
+    margin: auto;
+  }
+
+  .grid-item {
+    height: 350px;
+    width: 250px;
+  }
+}
+
+
+
+/* feedback styling */
+
+.container {
+  max-width: 600px;
+  margin: 50px auto;
+  background-color: #fff;
+  padding: 20px;
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  margin-left: 20px;
+}
+
+h1 {
+  text-align: center;
+}
+
+.filter-buttons {
+  text-align: center;
+  margin-bottom: 20px;
+}
+
+.filter-buttons button {
+  margin: 5px;
+  padding: 8px 12px;
+  cursor: pointer;
+  border: 1px solid #ddd;
+  background-color: #f9f9f9;
+  border-radius: 4px;
+}
+
+.container {
+  max-width: 600px;
+  margin: 0 auto;
+  text-align: center;
+  margin-top: 250px;
+  margin-left: 20px;
+}
+
+.feedback-form {
+  background-color: #f4f4f4;
+  padding: 20px;
+  border-radius: 10px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  /* width: 400px; */
+}
+
+form {
+  display: flex;
+  flex-direction: column;
+
+}
+.form-title{
+  color: white;
+}
+
+label {
+  display: block;
+  font-weight: bold;
+  margin-bottom: 5px;
+  color: white;
+  font-size: 17px;
+}
+
+input,
+textarea {
+  width: 100%;
+  padding: 10px;
+  box-sizing: border-box;
+  border: 1px solid black;
+  border-radius: 5px;
+}
+
+button {
+  background-color: none;
+  color: red;
+  padding: 10px 20px;
+  border: 1px solid red;
+  border-radius: 5px;
+  cursor: pointer;
+  font-size: 22px;
+  font-weight: bold;
+}
+
+/* button:hover {
+  background-color: lightgreen;
+} */
+
+/* Responsive Styles */
+@media screen and (max-width: 600px) {
+  .feedback-form {
+    padding: 15px;
+  }
+}
+
+@media screen and (max-width: 400px) {
+
+  input,
+  textarea {
+    padding: 8px;
+    font-size: 14px;
+  }
+
+  button {
+    padding: 8px 15px;
+    font-size: 14px;
+  }
+}
+
+/* Add this style for user feedback display */
+
+.user-feedback {
+  margin-top: 20px;
+  border: 1px solid #ddd;
+  padding: 10px;
+  border-radius: 4px;
+  background-color: #f9f9f9;
+
+}
+
+.grid-item-f {
+  height: 200px;
+  width: 300px;
+  background-color: antiquewhite;
+  border: 2px solid black;
+  border-radius: 10px;
+  margin: 10px;
+  font-size: 15px;
+  display: grid;
+  display: inline-block;
+}
+
+.user-name {
+  padding: 15px;
+}
+
+.feedback {
+  padding: 5px 15px 5px 15px;
+}
+
+.all-feedbacks {
+  /* height: 300px;
+  width: 100%;
+  margin: 0px ; */
+  /* background-color: lightgray; */
+  width: 100vw;
+  margin: 0px;
+  height: auto;
+  background: linear-gradient(black, gray);
+  
+}
+.all-feedbacks .card{
+  display: inline-block;
+} 
+
+.feedbacks {
+  background-color: whitesmoke;
+  border: none;
+  border-radius: 10px;
+  margin-left: 100px;
+  margin-right: 100px;
+  font-weight: bold;
+  text-align: center;
+  height: 70px;
+  margin-top: auto;
+  /* 
+      text-align: center;
+      width: 850px;
+      height: 70px;
+      margin-top: 10px;
+      font-weight: bold;
+      margin-left: auto;
+      margin-right: auto;
+      background-color: whitesmoke;
+      border: none;
+      border-radius: 10px; */
+}
+
+
+/* cg styling */
+
+
+/* Style for the movie card */
+.card {
+  border: 1px solid #ccc;
+  border-radius: 10px;
+  overflow: hidden;
+  margin: 10px;
+  box-shadow: 0 4px 8px rgba(0, 0, 0, 0.1);
+  transition: transform 0.3s ease-in-out;
+}
+
+.card:hover {
+  transform: scale(1.05);
+}
+
+.img {
+  width: 100%;
+  height: auto;
+  border-top-left-radius: 10px;
+  border-top-right-radius: 10px;
+}
+
+.main-content {
+  padding: 10px;
+}
+
+.card-text {
+  margin: 0;
+}
+
+.content h3 {
+  margin: 0;
+  color: #333;
+}
+
+/* feedback form styling */
+.form-container {
+  margin: auto;
+  /* padding: 20px; */
+  border-radius: 8px;
+  box-shadow: 0 0 10px rgba(0, 0, 0, 0.1);
+  height: auto;
+  width: 350px;
+  margin-top: 25px;
+  background: linear-gradient(crimson,black);
+}
+
+.feedbackForm {
+  padding: 25px;
+  font-size: 22px;
+  
+}
+
+/* .main-form-container{
+  background: linear-gradient(black,gray);
+} */

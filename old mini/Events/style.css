@@ -1,0 +1,88 @@
+/* Reset some default margin and padding */
+body, h1, h5, p {
+    margin: 0;
+    padding: 0;
+}
+
+/* Apply a background color to the body */
+body {
+    background-color: #f8f9fa;
+}
+a{
+    text-decoration: none;
+}
+/* Style the movie heading */
+#movie-heading {
+    text-decoration: none;
+
+    color: #f84464;
+}
+
+/* Style the UA, Comedy, and Drama columns */
+.row.justify-content-start .col-1 {
+    border: 1px solid #ccc;
+    border-radius: 20px;
+    padding: 3px;
+    margin-right: 5px;
+    color: black;
+    width: 80px;
+    font-size: smaller;
+    background-color: #fff; /* White background */
+}
+.main{
+    box-shadow: 5px 5px 5px 5px rgb(210, 212, 212);
+    background-color: #ffffff;
+    width: 80%;
+    margin-left: 10%;
+    margin-right:10%;
+    margin-top: 4%;
+
+}
+
+
+/* Style the movie genre and certification */
+.row .col-1 {
+    background-color: #f84464;
+    color: #fff;
+    padding: 5px;
+    margin-right: 5px;
+    text-align: center;
+}
+
+/* Style the cinema name */
+h5 {
+    color: #f84464;
+}
+
+/* Style the show timings */
+.row-cols-2 {
+    margin-top: 15px;
+}
+
+.row-cols-2 .col-4 {
+    margin-bottom: 10px;
+}
+
+.row-cols-2 span {
+    display: block;
+    background-color: #fff;
+    border: 1px solid #ccc;
+    padding: 10px;
+    margin-bottom: 5px;
+}
+
+/* Style the additional information */
+.row .col-1 {
+    background-color: #f84464;
+    color: #fff;
+    padding: 5px;
+    margin-top: 10px;
+}
+
+/* Responsive styling */
+@media (max-width: 767px) {
+    .col-lg-2 {
+        flex-basis: 100%;
+        max-width: 100%;
+    }
+}

@@ -1,0 +1,84 @@
+.main-box {
+  margin-top: 5px;
+  margin-bottom: 5px;
+  display: flex;
+  width: 100%;
+  background-size: cover;
+  background-color: whitesmoke;
+  flex-wrap: wrap;
+}
+
+.food-section {
+  width: 60%;
+  height: auto;
+  margin-left: 20px;
+  background: rgba(16, 14, 30, 1);
+  margin-top: 20px;
+  margin-bottom: 50px;
+  border: 1px solid black;
+  border-radius: 10px;
+}
+
+.card-body {
+  background-color: cornflowerblue;
+  text-align: center;
+  text-transform: uppercase;
+}
+
+.bill-box {
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 10px;
+  margin-right: 10px;
+  height: auto;
+  width: 400px;
+  border: 2px solid black;
+  border-radius: 15px;
+  color: black;
+  text-align: center;
+}
+
+.bill-section {
+  height: auto;
+  margin-left: 100px;
+  margin-top: 100px;
+}
+
+.card,
+.coupons {
+  height: auto;
+  margin-top: 30px;
+  margin-bottom: 30px;
+  margin-left: 30px;
+  margin-right: 30px;
+}
+
+.inner-box {
+  text-transform: capitalize;
+  text-align: center;
+}
+
+.snack-card:hover {
+  box-shadow: grey 5px 5px;
+}
+
+@media screen and (max-width: 768px) {
+  .main-box {
+    flex-direction: column;
+    /* Stack sections vertically on small screens */
+  }
+
+  .food-section {
+    width: 100%;
+    /* Take full width on small screens */
+  }
+
+  .bill-section {
+    margin-left: 20px;
+    /* Adjust margin on small screens if needed */
+    margin-top: 20px;
+    /* Adjust margin on small screens if needed */
+  }
+}
+
+/*# sourceMappingURL=Foodcoupons.css.map */

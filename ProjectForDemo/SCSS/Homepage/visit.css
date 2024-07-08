@@ -1,0 +1,400 @@
+body {
+  background-color: white;
+  margin: 0;
+  padding: 0;
+  background-color: rgb(34, 27, 63);
+  font-family: "Segoe UI", Tahoma, Geneva, Verdana, sans-serif;
+}
+
+.navbar {
+  background-color: black;
+}
+
+
+
+#city {
+  color: coral;
+  font-size: large;
+}
+
+#signin {
+  height: 40px;
+  width: 120px;
+  font-style: normal;
+  color: black;
+  border: 1px solid crimson;
+}
+
+#signin:hover {
+  height: 42px;
+  width: 125px;
+}
+
+* {
+  background-attachment: fixed;
+  background-size: cover;
+  font-family: 'Times New Roman', Times, serif;
+}
+
+#carouselExampleControls,
+.carousel-inner {
+  border-radius: 15px;
+
+}
+
+.text-muted {
+  opacity: 0.8;
+  color: black;
+}
+
+
+
+.d-flex {
+  width: 40%;
+}
+
+
+
+
+#nav-link {
+  color: crimson;
+}
+
+#carouselExampleControls {
+  background-color: black;
+}
+
+.area2 {
+  position: relative;
+}
+
+h3 {
+  color: crimson;
+
+}
+
+/* movie section on home page change by Mosmee */
+#MovieLoad {
+  border-radius: 13px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  box-shadow: 3px 14px 30px rgb(255, 255, 255), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.card {
+  width: 70%;
+  height: 95%;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-left: 15%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.hover_effect:hover {
+  transform: scale(1.05);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.card-img-top {
+  height: 340px;
+
+}
+
+#card-footer {
+  background-color: black;
+  height: 55px;
+  text-align: center;
+}
+
+.txt-muted {
+  font-weight: bold;
+  color: whitesmoke;
+  /* font-size: 1.3em; */
+}
+
+/* advertisment section change by Mosmee*/
+.main-bck {
+  background-color: white;
+  height: 250px;
+  position: relative;
+}
+
+.background {
+  width: 80%;
+  margin-right: 10%;
+  margin-left: 10%;
+  border-radius: 2px;
+  margin-top: 10%;
+  padding-top: 5%;
+  position: relative;
+  overflow: hidden;
+}
+
+.background img {
+  -o-object-fit: cover;
+  object-fit: cover;
+}
+
+.background .heading {
+  position: absolute;
+  top: 70%;
+  left: 50%;
+  transform: translate(-50%, -50%);
+  color: #fff;
+  text-align: center;
+  font-size: 2em;
+}
+
+
+
+/* Media query for screens below 716px */
+@media only screen and (max-width: 716px) {
+  .main-bck {
+    height: 100px;
+  }
+
+  .background {
+    width: 80%;
+    margin-top: 10%;
+    /* Adjust width for smaller screens */
+  }
+
+  .background .heading {
+    font-size: 1em;
+    /* Adjust font size for smaller screens */
+  }
+}
+
+
+
+
+
+
+
+
+
+/* event section on home page change by Mosmee */
+#visitEvents {
+  border-radius: 13px;
+  width: 80%;
+  margin-left: 10%;
+  margin-right: 10%;
+  box-shadow: 3px 14px 30px rgb(255, 255, 255), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.card1 {
+  width: 70%;
+  height: 95%;
+  border-radius: 8px;
+  overflow: hidden;
+  margin-left: 15%;
+  transition: transform 0.3s ease-in-out;
+}
+
+.card1:hover {
+  transform: scale(1.05);
+  box-shadow: 0 19px 38px rgba(0, 0, 0, 0.30), 0 15px 12px rgba(0, 0, 0, 0.22);
+}
+
+.card-img-top1 {
+  height: 340px;
+  width: 100%;
+}
+
+#card-footer1 {
+  background-color: black;
+  height: 55px;
+  text-align: center;
+}
+
+.txt-muted1 {
+  font-weight: bold;
+  color: whitesmoke;
+  /* font-size: 1.3em; */
+}
+
+.events,
+.movies {
+  display: flex;
+  justify-content: center;
+  align-items: center;
+  color: black;
+  margin: 10px;
+  margin-top: 4%;
+  width: 80%;
+  border-radius: 8px;
+  margin-left: 10%;
+  margin-right: 10%;
+  text-align: center;
+  text-transform: capitalize;
+  height: 60px;
+  background-color: white;
+}
+
+#center1,
+#center2,
+#center3 {
+  background-color: black;
+  color: gold;
+  margin: 15px;
+}
+
+
+
+/* Responsive styles */
+
+@media screen and (max-width: 299px) {
+  #img {
+    height: 20px;
+  }
+
+  #location,
+  #city {
+    display: none;
+  }
+
+  #nav2 {
+    background-color: goldenrod;
+    border: 2px solid blueviolet;
+  }
+
+  .d-flex {
+    width: 100%;
+  }
+
+  #center1,
+  #center3,
+  .movies {
+    background-color: blueviolet;
+  }
+
+  #center2,
+  .events {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .carousel-inner {
+    width: -moz-min-content;
+    width: min-content;
+  }
+
+  .card {
+    margin-left: 85px;
+    margin-right: 25px;
+  }
+
+  #toggle {
+    border: 1px solid wheat;
+    font-weight: bolder;
+  }
+
+  #toggle:hover {
+    border: 3px solid brown;
+  }
+}
+
+@media screen and (max-width: 768px) {
+  #img {
+    width: 40%;
+  }
+
+  #city {
+    font-size: 30px;
+  }
+
+  #toggle {
+    border: 1px solid wheat;
+    font-weight: bolder;
+  }
+
+  #toggle:hover {
+    border: 3px solid brown;
+  }
+
+  #nav2 {
+    background-color: goldenrod;
+    border: 2px solid blueviolet;
+  }
+
+  .d-flex {
+    width: 100%;
+  }
+
+  #center1,
+  #center3,
+  .movies {
+    background-color: blueviolet;
+  }
+
+  #center2,
+  .events {
+    background-color: rgb(254, 254, 254);
+  }
+
+  .carousel-inner {
+    width: -moz-min-content;
+    width: min-content;
+  }
+
+  .card {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+@media screen and (min-width: 300px) and (max-width: 767px) {
+  .navbar {
+    background-color: black;
+  }
+
+  #city {
+    color: wheat;
+  }
+
+  #img {
+    width: 60%;
+  }
+
+  #toggle {
+    border: 1px solid wheat;
+    font-weight: bolder;
+  }
+
+  #toggle:hover {
+    border: 3px solid brown;
+  }
+
+  #nav2 {
+    background-color: goldenrod;
+    border: 2px solid blueviolet;
+  }
+
+  .d-flex {
+    width: 100%;
+  }
+
+  #center1,
+  #center3,
+  .movies {
+    background-color: blueviolet;
+  }
+
+  #center2,
+  .events {
+    background-color: rgb(255, 255, 255);
+  }
+
+  .carousel-inner {
+    width: -moz-min-content;
+    width: min-content;
+  }
+
+  .card {
+    margin-left: 25px;
+    margin-right: 25px;
+  }
+}
+
+
+/*# sourceMappingURL=visit.css.map */

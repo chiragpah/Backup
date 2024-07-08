@@ -1,0 +1,67 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Movie Booking System</title>
+    <style>
+        body {
+            font-family: Arial, sans-serif;
+        }
+        .movie-container {
+            margin: 20px;
+        }
+        .receipt-container {
+            margin: 20px;
+        }
+    </style>
+</head>
+<body>
+
+<div class="movie-container">
+    <h2>Movie Booking System</h2>
+    <p>Select a movie:</p>
+    <select id="movieSelect">
+        <option value="avatar">Avatar</option>
+        <option value="inception">Inception</option>
+        <option value="titanic">Titanic</option>
+    </select>
+    <p>Number of tickets:</p>
+    <input type="number" id="ticketCount" value="1">
+    <button onclick="addBill()">Add Bill</button>
+</div>
+
+<div class="receipt-container">
+    <h2>Receipts</h2>
+    <ul id="receiptList"></ul>
+</div>
+
+<script>
+    function addBill() {
+        var movieSelect = document.getElementById("movieSelect");
+        var ticketCount = document.getElementById("ticketCount").value;
+
+        if (ticketCount <= 0) {
+            alert("Please enter a valid ticket count.");
+            return;
+        }
+
+        var movieName = movieSelect.options[movieSelect.selectedIndex].text;
+        var totalPrice = calculateTotalPrice(ticketCount);
+
+        var receiptList = document.getElementById("receiptList");
+        var listItem = document.createElement("li");
+        listItem.textContent = `Movie: ${movieName}, Tickets: ${ticketCount}, Total: $${totalPrice.toFixed(2)}`;
+        receiptList.appendChild(listItem);
+    }
+
+    function calculateTotalPrice(ticketCount) {
+        // In a real-world scenario, you might fetch the movie price from a database.
+        // For simplicity, let's assume a fixed price of $10 per ticket.
+        var ticketPrice = 10;
+        return ticketCount * ticketPrice;
+    }
+</script>
+
+</body>
+</html>

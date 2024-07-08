@@ -1,0 +1,59 @@
+{
+    "Theater": [
+        {
+            "LocId": 1001,
+            "TheaterId": 51,
+            "TheaterName": "Phoenix Market City"
+        },
+        {
+            "LocId": 1001,
+            "TheaterId": 52,
+            "TheaterName": "PVR Cinemas"
+        },
+        {
+            "LocId": 1001,
+            "TheaterId": 53,
+            "TheaterName": "INOX"
+        },
+        {
+            "LocId": 1001,
+            "TheaterId": 54,
+            "TheaterName": "Abhiruchi Cinema HAll"
+        },
+        {
+            "LocId": 1002,
+            "TheaterId": 55,
+            "TheaterName": "Cinepolis Theater"
+        }
+    ],
+    "Timing": [
+        {
+            "Mid": 10,
+            "LocId": 1001,
+            "TheaterId": 51,
+            "Timing": [
+                "12.00pm",
+                "3.00pm",
+                "6.00pm"
+            ]
+        },
+        {
+            "Mid": 11,
+            "LocId": 1001,
+            "TheaterId": 51,
+            "Timing": [
+                "3.00pm",
+                "6.00pm",
+                "9.00pm"
+            ]
+        },
+        {
+            "Mid": 11,
+            "LocId": 1002,
+            "Timing": [
+                "12.00pm",
+                "4.00pm"
+            ]
+        }
+    ]
+}

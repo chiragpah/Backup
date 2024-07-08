@@ -1,0 +1,204 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <script src="../JS/Plugins/all_cdn.js"></script>
+    <script src="https://cdnjs.cloudflare.com/ajax/libs/axios/1.6.4/axios.min.js" integrity="sha512-ANd7ZJmixP2T0hxOP4bS6hkci01fxyrQSyRdaY7IsWq1WlKsD0WwWBDVDZbnMR7CJZVKCTkDx/q5D5n2C2C+vg==" crossorigin="anonymous" referrerpolicy="no-referrer"></script>
+    <script src="https://code.jquery.com/jquery-3.7.1.js" integrity="sha256-eKhayi8LEQwp4NKxN+CfCh+3qOVUtJn3QNZ0TciWLP4=" crossorigin="anonymous"></script>
+     <script src="/JS/Header/header.js"></script>
+    <script src="/JS/Footer/Footer.js"></script>
+    <link rel="stylesheet" href="/JS/Footer/footer.css">
+    <script src="/JS/Controller/LoginCheck.js"></script>
+    <script src="https://code.jquery.com/jquery-3.6.4.min.js"></script>
+    <script src="/JS/Controller/Location.js"></script>
+    <link rel="stylesheet" href="/SCSS/location.css">
+    <link rel="stylesheet" href="/SCSS/Movie.css">
+    <link rel="stylesheet" href="/SCSS/Homepage/visit.css">
+
+    <script src="/JS/Controller/navbar_change.js"></script>
+<style>
+  .d-flex{
+    flex-direction: row;
+  }
+</style>
+</head>
+<body style="background-color: rgb(34, 27, 63);" >
+
+
+      <div class="area2">
+     
+              <div id="carouselExampleControls" class="carousel slide" data-bs-ride="carousel">
+                <div class="carousel-inner">
+                  <div class="carousel-item active">
+                    <img src="/Asset/carousel/ad1.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/Asset/carousel/ad2.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/Asset/carousel/ad3.webp" class="d-block w-100" alt="...">
+                  </div>
+                  <div class="carousel-item">
+                    <img src="/Asset/carousel/ad4.webp" class="d-block w-100" alt="...">
+                  </div>
+                </div>
+                <button class="carousel-control-prev" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="prev">
+                  <span class="carousel-control-prev-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Previous</span>
+                </button>
+                <button class="carousel-control-next" type="button" data-bs-target="#carouselExampleControls" data-bs-slide="next">
+                  <span class="carousel-control-next-icon" aria-hidden="true"></span>
+                  <span class="visually-hidden">Next</span>
+                </button>
+              </div><br>
+              </div>
+
+
+              <!-- card and filter section -->
+
+      
+          
+  
+       
+  
+
+
+              <div class="movies"><br>
+                <div class="title-container">
+                  <b><h3>Movies for You</h3></b>
+              
+                </div>
+              </div>
+
+         
+          <div class="card-holder">
+            
+          </div>
+
+
+       
+        <div class="all-feedbacks">
+
+        </div>
+
+        <div class="modal fade" id="exampleModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+          <div class="modal-dialog modal-xl">
+            <div class="modal-content">
+              <div class="modal-header">
+                
+                  <input
+            class="hidden_search_field"
+            id="search-input"
+            style="box-shadow: rgba(0, 0, 0, 0.35) 0px 5px 15px;"
+            type="search"
+            placeholder="Search for your city ..."
+            onkeyup="filt();"
+            aria-label="Search"/>
+                
+                <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+              </div>
+              <div class="modal-body">
+                <div class="cities_container">
+                  <ul style="display: flex; flex-wrap:wrap; "id="Ul">           <li>  <div class="city">
+                    <img src="/Asset/Newfolder/cities/ncr.webp" alt="delhi" id="1001" onclick="change(id) ">
+                    <div><span>Delhi</span></div>
+                  </div></li> 
+                 <li> <div class="city">
+                    <img src="/Asset/Newfolder/cities/ahd.webp" alt="ahemdabad" id= "1002" onclick="change(id)">
+                    <div><span>Ahemdabad</span></div>
+                  </div></li>
+                 <li><div class="city">
+                    <img src="/Asset/Newfolder/cities/bang.png" alt="bangalore" id="1003"  onclick="change(id)">
+                    <div><span>Bangalore</span></div>
+                  </div></li> 
+                  <li><div class="city">
+                    <img src="/Asset/Newfolder/cities/chd.webp" alt="chandigarh" id="1004" onclick="change(id)">
+                    <div><span>chandigarh</span></div>
+                  </div></li>
+                 <li> <div class="city">
+                    <img src="/Asset/Newfolder/cities//chen.webp" alt="chennai" id="1005" onclick="change(id)">
+                    <div><span>
+    
+                   Chennai </span></div>
+                  </div></li>
+                  <li>  <div class="city">
+                    <img src="/Asset/Newfolder/cities/hyderabad.png" alt="hyderabad" id="1006" onclick="change(id)">
+                    <div><span>Hyderabad</span></div>
+                  </div></li>
+                 <li> <div class="city">
+                    <img src="/Asset/Newfolder/cities/koch.webp" alt="kochi" id="1007" onclick="change(id)">
+                    <div><span>Kochi</span></div>
+                  </div></li>
+                 <li> <div class="city">
+                    <img src="/Asset/Newfolder/cities/kolk.webp" alt="kolkata" id="1008" onclick="change(id)">
+                    <div><span>kolkata</span></div>
+                  </div></li>
+                  <li>  <div class="city">
+                    <img src="/Asset/Newfolder/cities/mumbai.png" alt="mumbai" id="1009" onclick="change(id)">
+                    <div><span>Mumbai</span></div>
+                  </div></li>
+                 <li> <div class="city">
+                    <img src="/Asset/Newfolder/cities/pune.png" alt="pune" id="1010" onclick="change(id)">
+                    <div><span>Pune</span></div>
+                  </div></li>
+                  </ul>
+                </div>
+              </div>
+            </ul>
+            </div>
+            </div>
+    
+    </div>
+
+
+
+
+  <!-- LOGIN MODEL -->
+  <div class="modal fade" id="LoginModal" tabindex="-1" aria-labelledby="exampleModalLabel" aria-hidden="true">
+    <div class="modal-dialog modal-xl">
+      <div class="modal-content">
+        <div class="modal-header">
+
+
+
+          <button type="button" class="btn-close" data-bs-dismiss="modal" aria-label="Close"></button>
+        </div>
+        <div class="modal-body">
+          <main>
+            <link rel="stylesheet" href="/SCSS/Homepage/partial/Login.css">
+
+            <a style="color: white;  font-size: 22px; text-decoration: none; text-align: center;  padding: 5px; border-radius: 25%;"
+            class="Logostyle"><img src="/Asset/bookmecom-high-resolution-logo-transparent.png" style="width: 180px; height: 50px;"></a>
+            <div class="card p-5 login " >
+
+
+              <label for="UserName" class="loginlabel">Email:</label>
+              <span id="fNameError"></span>
+              <input type="text" class="txtLogin" placeholder="Enter Email" name="email" id="userId" required />
+
+              <label for="password" class="loginlabel">Password:</label>
+              <input type="password" placeholder="Enter Password" name="password" id="userPassword" class="txtLogin"
+                required />
+
+              <button type="submit" class="btn btn-primary text-center mb-5 mt-4" id="Submitbtn">Sign in</button>
+              <div class="links">
+                <a href="/HTML/reset-password.html">Forgot password?</a>
+                <a href="/HTML/NewRegistrationUser.html">Do not have an account?</a>
+              </div>
+              <script src="/JS/Controller/LoginValidation.js" type="module"></script>
+            </div>
+
+
+          </main>
+        </div>
+      </div>
+    <script src="/JS/Controller/Moviecontroller/movie_Details_controller.js" type="module"></script>
+   
+
+     <script src="/JS/Controller/Moviecontroller/search_controller.js" type="module"></script>
+ 
+   </body>
+
+</html>

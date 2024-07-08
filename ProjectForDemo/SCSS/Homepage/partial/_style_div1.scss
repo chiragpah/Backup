@@ -1,0 +1,6 @@
+@use 'Variable' as v;
+@mixin style_div1{
+    display: v.$var1;
+    justify-content: v.$var2;
+    align-items: v.$var2;
+}
