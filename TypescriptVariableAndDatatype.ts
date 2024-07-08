@@ -1,0 +1,10 @@
+let value: number = 32;
+let numb: null | string | number = null;
+console.log("Value is:", value);
+value = 43.7;
+console.log("Value is:", value);
+console.log(numb);
+numb = "chirag";
+console.log(numb);
+numb = 23;
+console.log(numb);
